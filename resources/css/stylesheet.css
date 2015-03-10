@@ -100,7 +100,7 @@ a > span{
 }
 .title > img{
 	height:200px;
-	border-radius:50%;
+	width:200px;
 	border-bottom-right-radius:50%;
 	border-top-right-radius:50%;
 	border-top-left-radius:50%;
