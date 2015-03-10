@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jimmy Jia | Resume</title>
+		<meta charset="utf-8">
+		<link href="resources/fonts/style.css" rel='stylesheet' type='text/css'>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src='resources/jquery.min.js'></script>
+		<script>
+			$(document).ready(function() {
+				var content=document.getElementById('content');
+	        	$(content).css("display", "none");
+    	    	$('.scrollup').click(function () {
+			        $("html, body").animate({
+			            scrollTop: 0
+			        }, 600);
+			        return false;
+	    		});
+	    	});
+			function pgload(){
+				var content=document.getElementById('content');
+				$(content).fadeIn(500);
+				var triangle=document.getElementById('fadein');
+				$(fadein).fadeIn(300);
+			}
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="top">
+				<div class="nav">
+					<a href="index.html" class="logo">
+						<img src="resources/icons/logohover.png" id="imgsrchover" height="45px" style="margin-top:2px">
+						<img src="resources/icons/logo.png" id="imgsrc" height="45px" style="margin-top:2px"></a>
+					<ul class="linkbar" id="menu">
+						<li><a href="index.html"><span class="linkr"></span>HOME</a></li>
+						<li><a href="design.html"><span class="linkr"></span>DESIGN</a></li>
+						<li><a href="about.html"><span class="linkr"></span>ABOUT</a></li>
+						<li><div class="active" id="fadein"></div><a href="resume.html"><span class="linkr"></span>RESUME</a></li>
+					</ul>
+					<div class="dropdown">
+						<button class="dropbutton" id="dropbutton" onclick="displaynav()"><img src="resources/icons/menu.png" class="svgw" height="40px"></button>
+						<ul class="dropmenu" id="drop-menu">
+							<li><a href="index.html"><span class="linkr"></span>HOME</a></li>
+							<li><a href="design.html"><span class="linkr"></span>DESIGN</a></li>
+							<li><a href="about.html"><span class="linkr"></span>ABOUT</a></li>
+							<li><a href="#"><span class="linkr"></span>RESUME</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="rcontent" id="content">
+				<div class="clearheader">
+					<p class="title ldown">Resume</p>
+					
+				</div>
+				<div class="resume">
+					<div class="resleft mpad">
+						<p class="vlarge">Jimmy Jia</p>
+						<a href="mailto:jimmy.j.jia@gmail.com">jimmy.j.jia@gmail.com</a>
+						<p>Cell: 503-475-9621</p>
+						<a href="http://github.com/jimmy-jia/" target="_blank">My Github</a>
+						<br><br>
+						<p class="large">Education</p>
+						<p>University of Illinois Urbana Champaign</p>
+						<p>Fall 2013- Spring 2017</p>
+						<p>Electrical Engineering</p>
+						<p>College of Engineering</p>
+						<p>GPA: 3.01/4.00</p>
+						<br>
+						<p class="large">Programming</p>
+						<p>HTML, CSS3, C, Python</p>
+						<p>Javascript, C++</p>
+						<a href="http://dropcanvas.com/rb15k/1"><img src="resources/icons/download.svg" height="24px" class="dllink"></img>Download Resume PDF</a>
+					</div>
+					<div class="resright">
+						<p class="vlarge">Experience</p>
+						<a href="http://cephei.us" target="_blank" class="large rlink">Cephei.us</a>
+						<p>Creator | Jan 2015 - Now</p>
+						<ul>
+							<li>Started Cephei, a realtime music discovery website that lets users post (with realtime updates) their favorite songs for others to enjoy</li>
+							<li>Created using the Firebase realtime database API and Javascript as well as HTML5/CSS3</li>
+							<li> Basic functions are complete, more advanced functions such as login and comments are in progress</li>
+							<li> Can be accessed at <a href="http://cephei.us">cephei.us</a>. The website is currently live</li>
+						</ul><br>
+						<a href="http://foodseeker.net" target="_blank" class="large rlink">Foodseeker.net</a>
+						<p>Creator | Dec 2014 - Now</p>
+						<ul>
+							<li>Developing <a href="http://foodseeker.net" target="_blank">foodseeker.net</a>, a web app that helps you choose where to eat quickly and easily using HTML5 geolocation</li>
+							<li>Currently rewriting javascript portion of application</li>
+							<li>Created using HTM5L/CSS3, Javascript, and the Yelp API</li>
+							<li> Uses Jquery and OAuth for interaction with the Yelp API</li>
+						</ul><br>
+
+
+
+						<a href="http://tjacupuncture.com" target="_blank" class="large rlink">TJ Acupuncture</a>
+						<p>Technical Specialist | June 2014 - Now</p>
+						<ul>
+							<li>At TJ Acupuncture, I provide technical support for all the clinic's needs (website, computers, files, etc).</li>
+							<li>Created <a href="http://tjacupuncture.com" target="_blank">tjacupuncture.com</a>, utilizing HTML/CSS, Javascript/Jquery, and the Google Maps API.</li>
+							<li>Recently added responsive design to accomodate for all screen sizes, planning a redesign to improve overall usability and user experience.</li>
+							<li>While at school, I continue to give technical support remotely</li>
+						</ul><br>
+						<a href="http://www.acementor.org/affiliates/oregon/portland/about-us/" target="_blank" class="large rlink">Ace Mentorship</a>
+						<p>Engineering Mentee | Winter 2013 - Spring 2013</p>
+						<ul>
+							<li>I worked with a small team of student peers and professional mentors to design an addition to Washington High School.</li>
+							<li>As a team, we created the project from the ground up, including Autodesk Revit designs, HVAC, water, environmental impacts, levels, and electrical systems.</li>
+							<li>At the end of the mentorship, I was selected as one of few students to recieve the 4 year ACE Scholarship for Engineering.</li>
+						</ul><br>
+
+						<p class="vlarge">Research</p>
+						<p class="large">Pine Mountain Observatory</p>
+						<p>Summer Research | Summer 2012</p><br>
+						<p>Over the summer I worked with Willamette University professors and graduate students to record photometric data on the contact binary star; VW Cephei. I used that research data to write 4000 word International Baccalaurate extended essay, which recieved a perfect grade.</p><br>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+					<div class="legal">
+						<a href="#" class="scrollup"><img src="resources/icons/up.svg" class="svgw" height="40px"></a>
+						<p>Jimmy Jia - 2014-2015</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			window.onload=pgload;
+		</script>
+		<script>
+			var count=0;
+			function displaynav(){
+				var dropper=document.getElementById("drop-menu");
+				if (count==0){
+					$(dropper).slideDown(400);
+					count=1;
+				}
+				else{
+					$(dropper).slideUp(400);
+					count=0;
+				}
+			}
+			if (count==1){
+				document.onclick=displaynav;
+				alert(test)
+			}
+		</script>
+	</body>
+</html>

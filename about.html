@@ -1,104 +1,103 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Jimmy Jia | About</title>
+		<title>Jimmy Jia - About</title>
 		<meta charset="utf-8">
-		<link href="resources/fonts/style.css" rel='stylesheet' type='text/css'>
-		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<meta name="description" content="Jimmy Jia - Web Developer and Designer - About Me">
+		<meta name="keywords" content="jimmy, jia, web, dev, developer, designer, design, website, css, html, javascript, jquery, about">
+		<link href="resources/css/stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="resources/css/fonts.css" rel="stylesheet" type="text/css">
 		<link rel="icon" href="favicon.ico">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src='resources/jquery.min.js'></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<script src='resources/js/jquery.min.js'></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<ul class="topbar" id="topup">
+					<li><a href="index.html"><span></span>HOME</a></li>
+					<li><a href="#"><span></span>ABOUT</a></li>
+					<li><a href="design.html"><span></span>DESIGN</a></li>
+					<li><a href="resume.html"><span></span>RESUME</a></li>
+					<li><a href="contact.html"><span></span>CONTACT</a></li>
+				</ul>
+				<button onclick="displaynav()" id="sliderb"><img src="resources/icons/menu.svg" class="svgw" height="40px"></button>
+			</div>
+				<ul class="topbar" id="slider">
+					<li><a href="index.html"><span></span>HOME</a></li>
+					<li><a href="#"><span></span>ABOUT</a></li>
+					<li><a href="design.html"><span></span>DESIGN</a></li>
+					<li><a href="resume.html"><span></span>RESUME</a></li>
+					<li><a href="contact.html"><span></span>CONTACT</a></li>
+				</ul>
+			<div class="bg"></div>
+			<div class="title">
+				<img src="resources/pics/bcme.png" alt="picture of Jimmy Jia"></img>					
+				<p><span>Hi! I'm</span> Jimmy Jia</p>
+				<p>a Frontend Web Developer</p>
+			</div>
+			<div class="content">
+				<div class="items">
+					<div class="info">
+						<p>If you're looking to learn more about me, you've come to the right place!</p>
+					</div>
+						
+						
+					<p class="centertext whyme">About me</p>
+					
+					<div class="bigtext">
+						<p class="centertext">My (Longish) Biography</p>
+						<p>I'm Jimmy Jia, a sophomore student at the University of Illinois at Urbana Champaign. <br>
+						I'm currently studying Electrical Engineering with a focus on Computer Science.</p>
+						<p class="centertext">Who I am</p>
+						<p>I'm a sophomore in electrical engineering who discovered a passion for technology at a young age. While the last generation grew up with the television, I, like many of my classmates, grew up with video games and computers. I got my first computer, a Windows 95 machine that we picked off a curb when I was in elementary school. I had no idea how to use it, besides playing one preinstalled game. Soon, my parents bought a Windows 98 machine, and at a friend's house I discovered the internet, and what I saw amazed me. I begged my parents to sign up for the internet, and soon we had NetZero (is that even around still?), which I used to play NeoPets every day after school. At around this age I started wondering how these marvelous machines actually worked. Were they magic? Were they some alien technology so advanced it takes Bill Gates to understand? I didn't know, and to be honest, I still don't know for a fact. As the years progressed, I went through more computers, to XP, Vista, and 7. By this time I was a fully fledged gamer, Diablo and League of Legends being my staples. I went through high school without learning how to code. Sure I went on Codecademny and checked out the Python and HTML/CSS course for a little bit, but never long enough to remember anything. It wasn't until coming to the University of Illinois that I discovered my love of programming and web design. Through my courses and own time, I started to learn more and more about programming, leaning towards web design because I love to see what I make come to life in front of me. I strike to one day be one of the best, and if I can keep up my pace of learning, my goal will be in sight.</p>
+						<p class="centertext">Why Electrical Engineering if you're a Web Developer?</p>
+						<p>I actually get this question a lot, and the answer is quite simple - my high school physics class. I honestly had no idea what I wanted to do in college, besides not anything medical. One day, in junior year, my physics teacher had an electrical engineer come in and give a short talk and a demo (of a basic DC generator). I found it interesting and decided I'd try out electrical engineering. Sadly I have now discovered I much prefer programming over circuit design. In the end, I may switch to computer engineering or get a minor in computer science, but whats certain is I plan to traverse down the road of an aspiring front end developer.</p>
+					</div>
+					<button class="abutton scrollup"><img src="resources/icons/up.svg" alt="scroll back up"></img></button>
+				</div>
+
+			</div>
+			<div class="push"></div>
+		</div>
+		<div class="footer">
+			<p>Jimmy Jia - 2014-2015</p>
+		</div>
+
 		<script>
 			$(document).ready(function() {
-				var content=document.getElementById('content');
-	        	$(content).css("display", "none");
     	    	$('.scrollup').click(function () {
 			        $("html, body").animate({
 			            scrollTop: 0
 			        }, 600);
 			        return false;
 	    		});
-	    	});
-			function pgload(){
-				var content=document.getElementById('content');
-				$(content).fadeIn(500);
-				var triangle=document.getElementById('fadein');
-				$(fadein).fadeIn(300);
-			}
-		</script>
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="top">
-				<div class="nav">
-					<a href="index.html" class="logo">
-						<img src="resources/icons/logohover.png" id="imgsrchover" height="45px" style="margin-top:2px">
-						<img src="resources/icons/logo.png" id="imgsrc" height="45px" style="margin-top:2px"></a>
-					<ul class="linkbar" id="menu">
-						<li><a href="index.html"><span class="linkr"></span>HOME</a></li>
-						<li><a href="design.html"><span class="linkr"></span>DESIGN</a></li>
-						<li><div class="active" id="fadein"></div><a href="#"><span class="linkr"></span>ABOUT</a></li>
-						<li><a href="resume.html"><span class="linkr"></span>RESUME</a></li>
-					</ul>
-					<div class="dropdown">
-						<button class="dropbutton" id="dropbutton" onclick="displaynav()"><img src="resources/icons/menu.png" class="svgw" height="40px"></button>
-						<ul class="dropmenu" id="drop-menu">
-							<li><a href="index.html"><span class="linkr"></span>HOME</a></li>
-							<li><a href="design.html"><span class="linkr"></span>DESIGN</a></li>
-							<li><a href="#"><span class="linkr"></span>ABOUT</a></li>
-							<li><a href="resume.html"><span class="linkr"></span>RESUME</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="content" id="content">
-				<div>
-					<div class="about widb">
-						<p class="title down adown">About Me</p>
-						<br>
-						<p class="large">My (Longish) Biography</p>
-						<br>
-						<p class="">I'm Jimmy Jia, a sophomore student at the University of Illinois at Urbana Champaign.</p><br>
-						<p>I'm currently studying Electrical Engineering with a focus on Computer Science.</p>
-					<br>
-						<p class="large">Who I Am</p>
-						<br>
-						<p>I'm a sophomore in electrical engineering who discovered a passion for technology at a young age. While the last generation grew up with the television, I, like many of my classmates, grew up with video games and computers. I got my first computer, a Windows 95 machine that we picked off a curb when I was in elementary school. I had no idea how to use it, besides playing one preinstalled game. Soon, my parents bought a Windows 98 machine, and at a friend's house I discovered the internet, and what I saw amazed me. I begged my parents to sign up for the internet, and soon we had NetZero (is that even around still?), which I used to play NeoPets every day after school. At around this age I started wondering how these marvelous machines actually worked. Were they magic? Were they some alien technology so advanced it takes Bill Gates to understand? I didn't know, and to be honest, I still don't know for a fact. As the years progressed, I went through more computers, to XP, Vista, and 7. By this time I was a fully fledged gamer, Diablo and League of Legends being my staples. I went through high school without learning how to code. Sure I went on Codecademny and checked out the Python and HTML/CSS course for a little bit, but never long enough to remember anything. It wasn't until coming to the University of Illinois that I discovered my love of programming and web design. Through my courses and own time, I started to learn more and more about programming, leaning towards web design because I love to see what I make come to life in front of me. I strike to one day be one of the best, and if I can keep up my pace of learning, my goal will be in sight.
-						</p>
-						<br>
-						<p class="large">Why Electrical Engineering if you're a Web Developer?</p>
-						<br>
-						<p>I actually get this question a lot, and the answer is quite simple - my high school physics class. I honestly had no idea what I wanted to do in college, besides not anything medical. One day, in junior year, my physics teacher had an electrical engineer come in and give a short talk and a demo (of a basic DC generator). I found it interesting and decided I'd try out electrical engineering. Sadly I have now discovered I much prefer programming over circuit design. In the end, I may switch to computer engineering or get a minor in computer science, but whats certain is I plan to traverse down the road of an aspiring front end developer.</p>
-					</div>
-				</div>
-				
-				<div class="footer">
-					<div class="legal">
-						<a href="#" class="scrollup"><img src="resources/icons/up.svg" class="svgw" height="40px"></a>
-						<p>Jimmy Jia - 2014-2015</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			window.onload=pgload;
-		</script>
-		<script>
+    		});
+			$(".workimg").hover(function(){
+				$(".1").fadeTo(400, 1);
+			}, function(){
+				if($(document).width()>720)
+				$(".1").fadeTo(400, 0);
+			})			
+			$(".workimg2").hover(function(){
+				$(".2").fadeTo(400, 1);
+			}, function(){
+				if($(document).width()>720)
+				$(".2").fadeTo(400, 0);
+			})
 			var count=0;
 			function displaynav(){
-				var dropper=document.getElementById("drop-menu");
+				var menu=document.getElementById("slider");
 				if (count==0){
-					$(dropper).slideDown(400);
+					$(menu).slideDown(400);
+					$(".header").css("background-color", "#43abc9");
 					count=1;
 				}
 				else{
-					$(dropper).slideUp(400);
+					$(menu).slideUp(400);
 					count=0;
+					$(".header").css("background-color", "#107896");
 				}
-			}
-			if (count==1){
-				document.onclick=displaynav;
-				alert(test)
 			}
 		</script>
 	</body>

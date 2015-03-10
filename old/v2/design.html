@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jimmy Jia | Design</title>
+		<meta charset="utf-8">
+		<link href="resources/fonts/style.css" rel='stylesheet' type='text/css'>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src='resources/jquery.min.js'></script>
+		<script>
+			$(document).ready(function() {
+				var content=document.getElementById('content');
+	        	$(content).css("display", "none");
+	        	$('.scrollup').click(function () {
+			        $("html, body").animate({
+			            scrollTop: 0
+			        }, 600);
+			        return false;
+	    		});
+	    	});
+			function pgload(){
+				var content=document.getElementById('content');
+				$(content).fadeIn(500);
+				var triangle=document.getElementById('fadein');
+				$(fadein).fadeIn(300);
+			}
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="top">
+				<div class="nav">
+					<a href="index.html" class="logo">
+						<img src="resources/icons/logohover.png" id="imgsrchover" height="45px" style="margin-top:2px">
+						<img src="resources/icons/logo.png" id="imgsrc" height="45px" style="margin-top:2px"></a>
+					<ul class="linkbar" id="menu">
+						<li><a href="index.html"><span class="linkr"></span>HOME</a></li>
+						<li><div class="active" id="fadein"></div><a href="#"><span class="linkr"></span>DESIGN</a></li>
+						<li><a href="about.html"><span class="linkr"></span>ABOUT</a></li>
+						<li><a href="resume.html"><span class="linkr"></span>RESUME</a></li>
+					</ul>
+					<div class="dropdown">
+						<button class="dropbutton" id="dropbutton" onclick="displaynav()"><img src="resources/icons/menu.png" class="svgw" height="40px"></button>
+						<ul class="dropmenu" id="drop-menu">
+							<li><a href="index.html"><span class="linkr"></span>HOME</a></li>
+							<li><a href="#"><span class="linkr"></span>DESIGN</a></li>
+							<li><a href="about.html"><span class="linkr"></span>ABOUT</a></li>
+							<li><a href="resume.html"><span class="linkr"></span>RESUME</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="content">
+				<div class="design about">
+					<div class="adown">
+						<p class="vlarge">Design</p>
+						<p>Email: <a href="mailto:jimmy.j.jia@gmail.com">jimmy.j.jia@gmail.com</a><br>Cell: 503-475-9621</p>
+					</div>
+					<div class=""><br>
+						<p class="large">Services</p>
+						<p>I offer a front-end website design and development service. I can create a wide range of websites, including personal pages, company sites, events, web-apps, and more.</p><br>
+						<p class="large">Pricing</p>
+						<p>Pricing is very flexible. I can work with almost any budget you have. Pricing starts as low as 20 dollars for a single simple static page. Feel free to contact me with what you have in mind and I'll get back to you with a breakdown on costs.</p><br>
+						<p class="large">Design</p>
+						<p>I can work with a design you supply, or I can work with you to create a custom design that you'll love. We will make sure your website represents exactly what you want, and how you want it.</p><br>
+						<p class="large">Features</p>
+						<p>I offer responsive design as a basis for every page. Written in hand coded HTML/CSS/Javascript, your website is sure to be unique and fast. On larger web pages, load times will be optimized to bring your customers to you faster. Any additional features you are looking for can be discussed.</p>
+					</div><br>
+
+					<div class="faq">
+						<p class="large">FAQ</p>
+						<p>Here are some frequently asked questions for web developers.</p>
+						<li><p>How long does it take to create a website</p></li>	
+						<p>This depends on a lot of things, such as the content, requested design, features, and many other factors that can drastically affect the timeframe of a project. For simple sites, a couple days is usually enough for a finished product. The larger a project is, the harder it is to say about a time frame.</p>
+						<li><p>How much does it cost to keep my website up</p></li>
+						<p>To have your website online you'll need two basic things. First off is a website domain. These are how people access your website. You can purchase them through various online stores, with a year cost that depends on the domain suffix (.com, .net, .us, etc). Second is the website hosting. Hosting is where your website's files are located for people to access. Hosting can be purchased from a lot of providers, which have plans that range from a month to a few years per payment.</p>
+						<li><p>What goes into creating a website</p></li>
+						<p>First off is an idea. Your idea is what creates the website, whatever it may be. With an idea, planning and design can take place, as well as studies on the user base. Using that information, development starts, optimizing the product with the user in mind.</p>
+						<li><p>What is Responsive Design</p></li>
+						<p>Responsive design is all about creating a webpage that looks good no matter what device you view it on. Not every visitor to your website will be using their computer, or their phone. Some may be using a tablet, others maybe a television. Responsive design accounts for all of the different widths and heights of devices and makes sure that the content of the website fits them perfectly.</p>
+						<li><p>What is this website built with?</p></li>
+						<p>My personal website is hand built with HTML, CSS, and Javascript. I wrote it using Sublime Text 2 on the Windows 8.1 OS. Hosting is provided thanks to Github Pages.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+					<div class="legal">
+						<a href="#" class="scrollup"><img src="resources/icons/up.svg" class="svgw" height="40px"></a>
+						<p>Jimmy Jia - 2014-2015</p>
+					</div>
+				</div>
+		</div>
+		<script>
+			window.onload=pgload;
+		</script>
+		<script>
+			var count=0;
+			function displaynav(){
+				var dropper=document.getElementById("drop-menu");
+				if (count==0){
+					$(dropper).slideDown(400);
+					count=1;
+				}
+				else{
+					$(dropper).slideUp(400);
+					count=0;
+				}
+			}
+			if (count==1){
+				document.onclick=displaynav;
+				alert(test)
+			}
+		</script>
+	</body>
+</html>

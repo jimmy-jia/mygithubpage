@@ -1,115 +1,101 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Jimmy Jia | Design</title>
+		<title>Jimmy Jia - Design</title>
 		<meta charset="utf-8">
-		<link href="resources/fonts/style.css" rel='stylesheet' type='text/css'>
-		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<meta name="description" content="Jimmy Jia - Web Developer and Designer - Design">
+		<meta name="keywords" content="jimmy, jia, web, dev, developer, designer, design, website, css, html, javascript, jquery, hire, design">
+		<link href="resources/css/stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="resources/css/fonts.css" rel="stylesheet" type="text/css">
 		<link rel="icon" href="favicon.ico">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src='resources/jquery.min.js'></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<script src='resources/js/jquery.min.js'></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<ul class="topbar" id="topup">
+					<li><a href="index.html"><span></span>HOME</a></li>
+					<li><a href="about.html"><span></span>ABOUT</a></li>
+					<li><a href="#"><span></span>DESIGN</a></li>
+					<li><a href="resume.html"><span></span>RESUME</a></li>
+					<li><a href="contact.html"><span></span>CONTACT</a></li>
+				</ul>
+				<button onclick="displaynav()" id="sliderb"><img src="resources/icons/menu.svg" class="svgw" height="40px"></button>
+			</div>
+				<ul class="topbar" id="slider">
+					<li><a href="index.html"><span></span>HOME</a></li>
+					<li><a href="about.html"><span></span>ABOUT</a></li>
+					<li><a href="#"><span></span>DESIGN</a></li>
+					<li><a href="resume.html"><span></span>RESUME</a></li>
+					<li><a href="contact.html"><span></span>CONTACT</a></li>
+				</ul>
+			<div class="bg"></div>
+			<div class="title">
+				<img src="resources/pics/bcme.png" alt="picture of Jimmy Jia"></img>					
+				<p><span>Hi! I'm</span> Jimmy Jia</p>
+				<p>a Frontend Web Developer</p>
+			</div>
+			<div class="content">
+				<div class="items">
+					<div class="info">
+						<p>If you're looking to get hire me, you're in the right place!</p>
+					</div>
+					<div class="bigtext">
+					<p class="centertext whyme">Design</p>
+					<p>All design is original, or supplied by the client. I can work with PSDs, and other types of mockups to create the website you want. I can also work with you to design a layout for you, including all the content you need.</p>
+					<p class="centertext whyme">Coding</p>
+					<p>All websites I create are written from scratch, no use of any frameworks like Bootstrap or Foundation. This way, we minimize the file size, avoiding any unneeded bloat that is included when you work with a framework</p>
+					<p class="centertext whyme">Pricing</p>
+					<p>My rates are very flexible, depending on the length of project, complexity, and whether you need maintenance. If you would like an estimate on your website or project, feel free to shoot me an email at <a href="mailto:jimmy.j.jia@gmail.com" style="color:#107896">jimmy.j.jia@gmail.com</a>. I can work with almost any budget, though the lower it is, the less features the resulting website will have. I have options for both hourly rates and lump sums.</p>
+					<p class="centertext whyme">Features</p>
+					<p>All websites will be responsive (content resizes appropriately depending on the viewer's screen size) and optimized for fast loading. Code will be written entirely by me, without the use of frameworks.</p>
+					<p class="centertext whyme">Steps to Launch a Website</p>
+					<p>The basic requirements for a web page is a domain and hosting. (I can help you register for both) For creating the website itself, assets like images you'd like to use, possible layouts, and different features you'd like to implement are provided for me. Then I'll work with you to create a plan for what the site will look like, and upon approval, the initial versions of the design will be created in HTML/CSS. When the design is approved, more advanced features are implemented and everything is tweaked until you are satisfied.</p>
+				</div>
+				</div>
+				<button class="abutton scrollup"><img src="resources/icons/up.svg" alt="scroll back up"></img></button>
+			</div>
+			<div class="push"></div>
+		</div>
+		<div class="footer">
+			<p>Jimmy Jia - 2014-2015</p>
+		</div>
+
 		<script>
 			$(document).ready(function() {
-				var content=document.getElementById('content');
-	        	$(content).css("display", "none");
-	        	$('.scrollup').click(function () {
+    	    	$('.scrollup').click(function () {
 			        $("html, body").animate({
 			            scrollTop: 0
 			        }, 600);
 			        return false;
 	    		});
-	    	});
-			function pgload(){
-				var content=document.getElementById('content');
-				$(content).fadeIn(500);
-				var triangle=document.getElementById('fadein');
-				$(fadein).fadeIn(300);
-			}
-		</script>
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="top">
-				<div class="nav">
-					<a href="index.html" class="logo">
-						<img src="resources/icons/logohover.png" id="imgsrchover" height="45px" style="margin-top:2px">
-						<img src="resources/icons/logo.png" id="imgsrc" height="45px" style="margin-top:2px"></a>
-					<ul class="linkbar" id="menu">
-						<li><a href="index.html"><span class="linkr"></span>HOME</a></li>
-						<li><div class="active" id="fadein"></div><a href="#"><span class="linkr"></span>DESIGN</a></li>
-						<li><a href="about.html"><span class="linkr"></span>ABOUT</a></li>
-						<li><a href="resume.html"><span class="linkr"></span>RESUME</a></li>
-					</ul>
-					<div class="dropdown">
-						<button class="dropbutton" id="dropbutton" onclick="displaynav()"><img src="resources/icons/menu.png" class="svgw" height="40px"></button>
-						<ul class="dropmenu" id="drop-menu">
-							<li><a href="index.html"><span class="linkr"></span>HOME</a></li>
-							<li><a href="#"><span class="linkr"></span>DESIGN</a></li>
-							<li><a href="about.html"><span class="linkr"></span>ABOUT</a></li>
-							<li><a href="resume.html"><span class="linkr"></span>RESUME</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="content" id="content">
-				<div class="design about">
-					<div class="adown">
-						<p class="vlarge">Design</p>
-						<p>Email: <a href="mailto:jimmy.j.jia@gmail.com">jimmy.j.jia@gmail.com</a><br>Cell: 503-475-9621</p>
-					</div>
-					<div class=""><br>
-						<p class="large">Services</p>
-						<p>I offer a front-end website design and development service. I can create a wide range of websites, including personal pages, company sites, events, web-apps, and more.</p><br>
-						<p class="large">Pricing</p>
-						<p>Pricing is very flexible. I can work with almost any budget you have. Pricing starts as low as 20 dollars for a single simple static page. Feel free to contact me with what you have in mind and I'll get back to you with a breakdown on costs.</p><br>
-						<p class="large">Design</p>
-						<p>I can work with a design you supply, or I can work with you to create a custom design that you'll love. We will make sure your website represents exactly what you want, and how you want it.</p><br>
-						<p class="large">Features</p>
-						<p>I offer responsive design as a basis for every page. Written in hand coded HTML/CSS/Javascript, your website is sure to be unique and fast. On larger web pages, load times will be optimized to bring your customers to you faster. Any additional features you are looking for can be discussed.</p>
-					</div><br>
-
-					<div class="faq">
-						<p class="large">FAQ</p>
-						<p>Here are some frequently asked questions for web developers.</p>
-						<li><p>How long does it take to create a website</p></li>	
-						<p>This depends on a lot of things, such as the content, requested design, features, and many other factors that can drastically affect the timeframe of a project. For simple sites, a couple days is usually enough for a finished product. The larger a project is, the harder it is to say about a time frame.</p>
-						<li><p>How much does it cost to keep my website up</p></li>
-						<p>To have your website online you'll need two basic things. First off is a website domain. These are how people access your website. You can purchase them through various online stores, with a year cost that depends on the domain suffix (.com, .net, .us, etc). Second is the website hosting. Hosting is where your website's files are located for people to access. Hosting can be purchased from a lot of providers, which have plans that range from a month to a few years per payment.</p>
-						<li><p>What goes into creating a website</p></li>
-						<p>First off is an idea. Your idea is what creates the website, whatever it may be. With an idea, planning and design can take place, as well as studies on the user base. Using that information, development starts, optimizing the product with the user in mind.</p>
-						<li><p>What is Responsive Design</p></li>
-						<p>Responsive design is all about creating a webpage that looks good no matter what device you view it on. Not every visitor to your website will be using their computer, or their phone. Some may be using a tablet, others maybe a television. Responsive design accounts for all of the different widths and heights of devices and makes sure that the content of the website fits them perfectly.</p>
-						<li><p>What is this website built with?</p></li>
-						<p>My personal website is hand built with HTML, CSS, and Javascript. I wrote it using Sublime Text 2 on the Windows 8.1 OS. Hosting is provided thanks to Github Pages.</p>
-					</div>
-				</div>
-			</div>
-			<div class="footer">
-					<div class="legal">
-						<a href="#" class="scrollup"><img src="resources/icons/up.svg" class="svgw" height="40px"></a>
-						<p>Jimmy Jia - 2014-2015</p>
-					</div>
-				</div>
-		</div>
-		<script>
-			window.onload=pgload;
-		</script>
-		<script>
+    		});
+			$(".workimg").hover(function(){
+				$(".1").fadeTo(400, 1);
+			}, function(){
+				if($(document).width()>720)
+				$(".1").fadeTo(400, 0);
+			})			
+			$(".workimg2").hover(function(){
+				$(".2").fadeTo(400, 1);
+			}, function(){
+				if($(document).width()>720)
+				$(".2").fadeTo(400, 0);
+			})
 			var count=0;
 			function displaynav(){
-				var dropper=document.getElementById("drop-menu");
+				var menu=document.getElementById("slider");
 				if (count==0){
-					$(dropper).slideDown(400);
+					$(menu).slideDown(400);
+					$(".header").css("background-color", "#43abc9");
 					count=1;
 				}
 				else{
-					$(dropper).slideUp(400);
+					$(menu).slideUp(400);
 					count=0;
+					$(".header").css("background-color", "#107896");
 				}
-			}
-			if (count==1){
-				document.onclick=displaynav;
-				alert(test)
 			}
 		</script>
 	</body>
