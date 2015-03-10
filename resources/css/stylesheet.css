@@ -167,7 +167,8 @@ a > span{
 }
 .contact *{
 	color:#107896;
-	transition: color .4s;
+	-webkit-transition: color .4s;
+	        transition: color .4s;
 	text-align:center;
 }
 .contact a:hover{
@@ -236,7 +237,8 @@ a.download{
 	background-color:#106897;
 	display:inline-block;
 	margin:0 auto;
-	transition:background-color .4s;
+	-webkit-transition:background-color .4s;
+	        transition:background-color .4s;
 }
 p.download{
 	display:inline-block;
@@ -286,17 +288,21 @@ body::-webkit-scrollbar-button:decrement, body::-webkit-scrollbar-button:increme
 /**************************/
 .work > div > a > img{
 	width:100%;
-	transition: -webkit-filter .2s;
+	-webkit-transition: -webkit-filter .2s;
+	        transition: -webkit-filter .2s;
 }
 .work > div > a > img:hover{
 	-webkit-filter:blur(3px) grayscale(100%);
-	filter:blur(3px) grayscale(100%);
+	filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="3" /><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+	-webkit-filter:blur(3px) grayscale(100%);
+	        filter:blur(3px) grayscale(100%);
 }
 .imgup{
 	pointer-events:none;
 	position:relative;
 	top:-360px;
 	opacity:0;
+	filter:alpha(opacity=0);
 }
 .imgup p{
 	margin-left:50px;
@@ -386,6 +392,7 @@ body::-webkit-scrollbar-button:decrement, body::-webkit-scrollbar-button:increme
 	.imgup{
 		position:static;
 		opacity:1;
+		filter:alpha(opacity=100);
 		text-align:center;
 		padding:10px 0;
 	}
