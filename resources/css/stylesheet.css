@@ -98,9 +98,13 @@ a > span{
 .title *{
 	display:inline-block;
 }
-.title img{
+.title > img{
 	height:200px;
 	border-radius:50%;
+	border-bottom-right-radius:50%;
+	border-top-right-radius:50%;
+	border-top-left-radius:50%;
+	border-bottom-left-radius:50%;
 	border:2px solid #43ABC9;
 	box-shadow:0 0 3px #ccc;
 }
