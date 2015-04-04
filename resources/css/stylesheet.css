@@ -18,6 +18,12 @@ a{
 	-webkit-transition:color .4s;
 	        transition:color .4s;
 }
+.otf{
+	font-size:125%;
+}
+.pad{
+	padding:20px inherit;
+}
 a:hover{
 	color: white;
 	cursor: pointer;
@@ -187,6 +193,15 @@ a > span{
 	-webkit-justify-content:center;
 	-ms-flex-pack:center;
 	justify-content:center;
+}
+.flexbox > a > img{
+	padding:10px;
+	height:60px;
+	width:auto;
+	transition:all .5s ease;
+}
+.flexbox > a > img:hover{
+	transform:scale(2.0);
 }
 .flexbox > div{
 	background-color:white;
