@@ -472,6 +472,10 @@ body::-webkit-scrollbar-button:decrement, body::-webkit-scrollbar-button:increme
 		text-align:center;
 		padding:10px 0;
 	}
+	.position{
+		position:static;
+		height:auto;
+	}
 	.imgup p{
 		margin-left:0;
 		text-shadow:none;
