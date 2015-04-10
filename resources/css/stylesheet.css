@@ -85,6 +85,9 @@ a > span{
 .topbar li:hover{
 	background-color:#43ABC9;
 }
+.mobilehead{
+	display:none;
+}
 .content{
 	max-width:800px;
 	margin:0 auto;
@@ -149,7 +152,11 @@ a > span{
 	height:50px;
 }
 .bbutton{
-	margin-top:-100px;
+	background-color:transparent;
+}
+.bbutton:hover{
+	background-color:transparent;
+	cursor:pointer;
 }
 .abutton img{
 	position:relative;
@@ -226,6 +233,25 @@ a > span{
 #slider, #sliderb{
 	display:none;
 }
+.switch{
+	color:#107896; 
+	text-shadow:0 0 2px #baa;
+	transition:color .4s;
+}
+.switch i{
+	color:#f39c12;
+	transition:color .4s;
+}
+.switch:hover{
+	color:#f39c12;
+}
+.switch i:hover{
+	color:#107896;
+}
+
+
+/*FOOTER*/
+
 .push, .footer{
 	min-height:50px;
 }
@@ -347,7 +373,15 @@ body::-webkit-scrollbar-button:decrement, body::-webkit-scrollbar-button:increme
 	font-size:150%;
 	padding-bottom:-2px;
 	margin-bottom:3px;
-	border-bottom:2px solid #0d3d56;
+}
+.position{
+	height:0;
+	position:relative;
+	top:0;
+}
+.work > div{
+	margin-top:30px;
+	margin-bottom:20px;
 }
 
 /***************************
@@ -355,6 +389,15 @@ body::-webkit-scrollbar-button:decrement, body::-webkit-scrollbar-button:increme
 /*************************/
 
 @media print, screen and (max-width:720px){
+	.mobilehead{
+		display:block;
+		position:absolute;
+		top:6px;
+		left:10px;
+		font-size:150%;
+		font-family:'Open Sans Condensed', sans-serif;
+		font-weight:bold;
+	}
 	.content{
 		padding:0;
 	}
@@ -388,6 +431,7 @@ body::-webkit-scrollbar-button:decrement, body::-webkit-scrollbar-button:increme
 		display:none;
 	}
 	#sliderb{
+		padding-top:3px;
 		display:block;
 		float:right;
 		background-color:transparent;
