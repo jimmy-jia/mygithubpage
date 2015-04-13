@@ -8,7 +8,8 @@ body{
 }
 a{
 	text-decoration:none;
-	transition: color .4s;
+	-webkit-transition: color .4s;
+	        transition: color .4s;
 }
 a:hover{
 	color:#2cccee;
@@ -32,7 +33,8 @@ h1{
 	border-bottom:#483154;
 	box-shadow:0px -1px 3px #483154;
 	z-index: 10;
-	transition:background-color .4s;
+	-webkit-transition:background-color .4s;
+	        transition:background-color .4s;
 }
 .nav{
 	display:-webkit-box;
@@ -137,7 +139,9 @@ a > span{
 	-webkit-justify-content:space-between;
 	-ms-flex-pack:justify;
 	justify-content:space-between;
-	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 .subinfo{
 	padding:10px;
@@ -192,7 +196,8 @@ a > span{
 	width:50px;
 	height:50px;
 	color:white;
-	transition:background-color .4s;
+	-webkit-transition:background-color .4s;
+	        transition:background-color .4s;
 }
 #scrollup:active, #scrollup:focus{
 	outline:0;
@@ -300,7 +305,8 @@ body::-webkit-scrollbar-button:decrement, body::-webkit-scrollbar-button:increme
 		color: #ffccff;
 		font-size:200%;
 		font-family:'Open Sans Condensed', sans-serif;
-		transition:color .4s;
+		-webkit-transition:color .4s;
+		        transition:color .4s;
 	}
 	#mobnav a:hover{
 		color:#fff;
