@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+		<title>HeadPhone Wiki Links</title>
+		<meta charset="utf-8">
+		<meta name="description" content="FAQ for Headphones">
+		<meta name="keywords" content="headphones, wiki, earbuds, iems, ciems, iem, ciem, headphone, earbud, ear, hearing, music, listen">
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="fonts.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+	<button id="scrollup" class="scrollup">^</button>
+	<div class="header">
+		<ul class="nav">
+			<li><a href="index.html"><span></span>home</a></li>
+			<li><a href="faq.html"><span></span>faq</a></li>
+			<li><a href="http://reddit.com/r/headphones/" target="_blank"><span></span>reddit</a></li>
+			<li><a href="links.html"><span></span>links</a></li>
+			<li><a href="http://jimmyjia.me" target="_blank"><span></span>personal</a></li>
+		</ul>
+		<button onclick="displaynav()" id="mobnavbutton"><img src="menu.svg" height="60px" alt="dropdown button"></button>
+	</div>
+		<ul class="" id="mobnav">
+			<li><a href="index.html"><span></span>home</a></li>
+			<li><a href="faq.html"><span></span>faq</a></li>
+			<li><a href="http://reddit.com/r/headphones/" target="_blank"><span></span>reddit</a></li>
+			<li><a href="links.html"><span></span>links</a></li>
+			<li><a href="http://jimmyjia.me" target="_blank"><span></span>personal</a></li>
+		</ul>
+	<div class="wrapper">
+
+	</div>
+
+
+			<script>
+			var count=0;
+			function displaynav(){
+				var menu=document.getElementById("mobnav");
+				if (count==0){
+					$(menu).slideDown(400);
+					$(".header").css("background-color", "#483154");
+					count=1;
+				}
+				else{
+					$(menu).slideUp(400);
+					count=0;
+					$(".header").css("background-color", "#755685");
+				}
+			}
+			$(document).ready(function() {
+    	    	$('.scrollup').click(function () {
+			        $("html, body").animate({
+			            scrollTop: 0
+			        }, 600);
+			        return false;
+	    		});
+    		});
+		</script>
+
+	</body>
