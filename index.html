@@ -79,6 +79,7 @@
 					<p class="restxt centertext">Any device just works.</p>
 					<p class="centertext whyme"><span class="bold">Experience</span></p>
 					<p class="centertext">I currently work at <a href="http://researchpark.illinois.edu/enterpriseworks" target="_blank" class="switch">EnterpriseWorks</a> as a web developer intern. I design and create websites for the various startups that are located within the EnterpriseWorks Incubator. I work together with the team at EnterpriseWorks and the clients, to create a wide variety of websites to suit their wide range of needs.</p>
+					<!--
 					<p class="centertext whyme">Here are some samples of <span style="font-weight:bold">My Projects</span></p>
 					<div class="work">
 						<div>
@@ -109,8 +110,27 @@
 								</div>
 							</a>
 						</div>
+					</div>-->
+					<div class="rotwrap">
+						<div class="rotitem display" id="slide1">
+							<p>Here are some examples of my work</p>
+							<p>Click on the buttons below to browse</p>
+							<p>&lt; / &gt;</p>
+						</div>
+						<div class="rotitem" id="slide2">
+							<a href="http://cephei.us" target="_blank">cephei.us</a>
+							<p>cephei.us is a realtime music discovery platform. It shows users videos submitted by other users in real time, and features a search function to find the music you want to hear. Written in HTML5/CSS3/JS and uses the FireBase API for the backend.</p>
+						</div>
+						<div class="rotitem" id="slide3">
+							<a href="http://foodseeker.net" target="_blank">foodseeker.net</a>
+							<p>foodseeker.net is a Yelp powered food finding web app. It was created with HTML5/CSS3/JS with the Yelp API</p>
+						</div>
+						<ul class="rotnav">
+							<li><button onclick="nav(1)">home</button></li>
+							<li><button onclick="nav(2)">cephei.us</button></li>
+							<li><button onclick="nav(3)">foodseeker</button></li>
+						</ul>
 					</div>
-					
 					<button class="abutton scrollup"><img src="resources/icons/up.svg" alt="scroll back up"></img></button>
 				</div>
 
@@ -154,6 +174,25 @@
 					$(menu).slideUp(400);
 					count=0;
 					$(".header").css("background-color", "#107896");
+				}
+			}
+			function nav(display){
+				switch(display){
+					case 1:
+						$("#slide2").fadeOut(0);
+						$("#slide3").fadeOut(0);
+						$("#slide1").fadeIn(400);
+						break;
+					case 2:
+						$("#slide3").fadeOut(0);
+						$("#slide1").fadeOut(0);
+						$("#slide2").fadeIn(400);
+						break;
+					case 3:
+						$("#slide1").fadeOut(0);
+						$("#slide2").fadeOut(0);
+						$("#slide3").fadeIn(400);
+						break;
 				}
 			}
 		</script>
