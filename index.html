@@ -122,13 +122,19 @@
 							<p>cephei.us is a realtime music discovery platform. It shows users videos submitted by other users in real time, and features a search function to find the music you want to hear. Written in HTML5/CSS3/JS and uses the FireBase API for the backend.</p>
 						</div>
 						<div class="rotitem" id="slide3">
+							<a href="http://jimmy-jia.github.io/hackerneue/" target="_blank">hackerneue</a>
+							<p>Hackerneue is a quick project using the HackerNews API to create a auto loading mobile friendly website</p>
+
+						</div>
+						<div class="rotitem" id="slide4">
 							<a href="http://foodseeker.net" target="_blank">foodseeker.net</a>
 							<p>foodseeker.net is a Yelp powered food finding web app. It was created with HTML5/CSS3/JS with the Yelp API</p>
 						</div>
 						<ul class="rotnav">
 							<li><button onclick="nav(1)">home</button></li>
 							<li><button onclick="nav(2)">cephei.us</button></li>
-							<li><button onclick="nav(3)">foodseeker</button></li>
+							<li><button onclick="nav(3)">hackerneue</button></li>
+							<li><button onclick="nav(4)">foodseeker</button></li>
 						</ul>
 					</div>
 					<button class="abutton scrollup"><img src="resources/icons/up.svg" alt="scroll back up"></img></button>
@@ -181,17 +187,26 @@
 					case 1:
 						$("#slide2").fadeOut(0);
 						$("#slide3").fadeOut(0);
+						$("#slide4").fadeOut(0);
 						$("#slide1").fadeIn(400);
 						break;
 					case 2:
 						$("#slide3").fadeOut(0);
 						$("#slide1").fadeOut(0);
+						$("#slide4").fadeOut(0);
 						$("#slide2").fadeIn(400);
 						break;
 					case 3:
 						$("#slide1").fadeOut(0);
 						$("#slide2").fadeOut(0);
+						$("#slide4").fadeOut(0);
 						$("#slide3").fadeIn(400);
+						break;
+					case 4:
+						$("#slide1").fadeOut(0);
+						$("#slide2").fadeOut(0);
+						$("#slide3").fadeOut(0);
+						$("#slide4").fadeIn(400);
 						break;
 				}
 			}
