@@ -1,103 +1,131 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Jimmy Jia - About</title>
+		<title>About Jimmy Jia - Web Developer</title>
+		<meta name="description" content="Hi, I'm Jimmy Jia, a web developer. I love creating and learning new things.">
+		<meta name="keywords" content="jimmy, jia, web, dev, developer, designer, design, website, css, html, javascript, jquery, hire">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 		<meta charset="utf-8">
-		<meta name="description" content="Jimmy Jia - Web Developer and Designer - About Me">
-		<meta name="keywords" content="jimmy, jia, web, dev, developer, designer, design, website, css, html, javascript, jquery, about">
-		<link href="resources/css/stylesheet.css" rel="stylesheet" type="text/css">
-		<link href="resources/css/fonts.css" rel="stylesheet" type="text/css">
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400|Open+Sans+Condensed:300|Lato|Montserrat|Source+Sans+Pro:400,700italic|Varela|Poiret One' rel='stylesheet' type='text/css'>
 		<link rel="icon" href="favicon.ico">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="resources/js/jquery-ui.min.js"></script>
 	</head>
 	<body>
-		<div class="wrapper">
-			<div class="header">
-				<ul class="topbar" id="topup">
-					<li><a href="index.html"><span></span>HOME</a></li>
-					<li><a href="#"><span></span>ABOUT</a></li>
-					<li><a href="design.html"><span></span>DESIGN</a></li>
-					<li><a href="resume.html"><span></span>RESUME</a></li>
-					<li><a href="contact.html"><span></span>CONTACT</a></li>
-				</ul>
-				<button onclick="displaynav()" id="sliderb"><img src="resources/icons/menu.svg" class="svgw" height="40px"></button>
-			</div>
-				<ul class="topbar" id="slider">
-					<li><a href="index.html"><span></span>HOME</a></li>
-					<li><a href="#"><span></span>ABOUT</a></li>
-					<li><a href="design.html"><span></span>DESIGN</a></li>
-					<li><a href="resume.html"><span></span>RESUME</a></li>
-					<li><a href="contact.html"><span></span>CONTACT</a></li>
-				</ul>
-			<div class="bg"></div>
-			<div class="title">
-				<img class="me" src="resources/pics/bcme.png" alt="picture of Jimmy Jia">				
-				<p><span>Hi! I'm</span> Jimmy Jia</p>
-				<p>a Frontend Web Developer</p>
-			</div>
-			<div class="content">
-				<div class="items">
-					<div class="info">
-						<p>If you're looking to learn more about me, you've come to the right place!</p>
+		<div class="wrapper aboutpad">
+			<header>
+				<a href="#" id="me">Jimmy Jia</a>
+				<a href="index.html" id="homebutton" style="float: right">Home</a>
+			</header>
+			<div class="content" id="top">
+				<section id="aboutme">
+					<h3>About <span class="hl">Me</span>?</h3>
+					<div>
+						<img src="resources/pics/classy.jpg"></img>
+						<p style="text-align: center; margin-bottom: 20px"><i>Heres a classy picture of me</i></p>
+						<p>Where do I start?... Well I'm a Chinese-American <b class="hl">web developer</b>, born in Beijing and raised in Portland. I love music, games, and a good challenge. In my free time, I like drawing though I'm not very good, and I love playing the guitar and piano. I'm also an avid gamer, mostly PC but I will never say no to a Smash Bros. or Pokemon battle.</p>
 					</div>
-						
-						
-					<p class="centertext whyme bold">About me</p>
-					
-					<div class="bigtext">
-						<p class="centertext">My (Longish) Biography</p>
-						<p>I'm Jimmy Jia, a sophomore student at the University of Illinois at Urbana Champaign. <br>
-						I'm currently studying Electrical Engineering with a focus on Computer Science.</p>
-						<p class="centertext">Who I am</p>
-						<p>I'm a sophomore in electrical engineering who discovered a passion for technology at a young age. While the last generation grew up with the television, I, like many of my classmates, grew up with video games and computers. I got my first computer, a Windows 95 machine that we picked off a curb when I was in elementary school. I had no idea how to use it, besides playing one preinstalled game. Soon, my parents bought a Windows 98 machine, and at a friend's house I discovered the internet, and what I saw amazed me. I begged my parents to sign up for the internet, and soon we had NetZero (is that even around still?), which I used to play NeoPets every day after school. At around this age I started wondering how these marvelous machines actually worked. Were they magic? Were they some alien technology so advanced it takes Bill Gates to understand? I didn't know, and to be honest, I still don't know for a fact. As the years progressed, I went through more computers, to XP, Vista, and 7. By this time I was a fully fledged gamer, Diablo and League of Legends being my staples. I went through high school without learning how to code. Sure I went on Codecademny and checked out the Python and HTML/CSS course for a little bit, but never long enough to remember anything. It wasn't until coming to the University of Illinois that I discovered my love of programming and web design. Through my courses and own time, I started to learn more and more about programming, leaning towards web design because I love to see what I make come to life in front of me. I strike to one day be one of the best, and if I can keep up my pace of learning, my goal will be in sight.</p>
-						<p class="centertext">Why <b>Electrical Engineering</b> if you're a <b>Web Developer?</b></p>
-						<p>I actually get this question a lot, and the answer is quite simple - my high school physics class. I honestly had no idea what I wanted to do in college, besides not anything medical. One day, in junior year, my physics teacher had an electrical engineer come in and give a short talk and a demo (of a basic DC generator). I found it interesting and decided I'd try out electrical engineering. Sadly I have now discovered I much prefer programming over circuit design. In the end, I may switch to computer engineering or get a minor in computer science, but whats certain is I plan to traverse down the road of an aspiring front end developer.</p>
+					<div><img src="resources/pics/uiuc.jpg"></img></div>
+					<div>
+						<h3>My <span class="hl">Education</span></h3>
+						<p>I'm currently a Junior studying Electrical and Computer Engineering at the <span class="illini">University of Illinois, Urbana Champaign</span>. My classes are focused more on the computer engineering side of things, with classes such as <b><i class="hl">Computer Algorithms, Data Structures, Operating Systems, Computer Graphics, and more.</i></b> I'm hoping to become a well versed developer who can adapt to any situation with any technology. </p><br>
+						<p>For high school, I attended Lincoln High School in Portland, Oregon, where I graduated with a full International Baccalaureate degree. For my Extended Essay, I wrote an astronomy paper based on research I did over summer on the contact binary star - VW Cephei, which is the namesake of my website <b><i><a href="http://cephei.us">cephei.us</a></i></b>.</p>
 					</div>
-					<button class="abutton scrollup"><img src="resources/icons/up.svg" alt="scroll back up"></img></button>
-				</div>
+					<div><img src="resources/pics/prestige.jpg"></img></div>
+					<div>
+						<h3>My <span class="hl">Hobbies</span></h3>
+						<p>I have a pretty wide range of hobbies. The most predominant of those being music. I've loved music ever since I was a little tot, and my parents had me take piano classes. I was so amazed by the sound that I could produce by just pressing a few buttons, and soon, before I knew it, I was able to play songs that sounded, to my 8 year old ears... <b><i class="hl">good</i></b>, though now I know amazing the piano can really sound. Today, I've played the piano and guitar combined for nearly as many years as I've lived. </p>
+						<br><p>On another note about music, I also love audio technology, most notably headphones, amplifiers, and DACs (digital - analog converters). I currently own a pair of HifiMan HE-400s, AKG K702s, and Baldoor E100s and 300s. I'm looking to hopefully purchase the Beyerdynamic T1 soon as well.</p>
+						<br><p>Another one of my hobbies is gaming. I'd go so far as to call myself a gamer, though these days I rarely have the time for it. I have countless great memories of playing Halo, Counter-Strike, Diablo, Super Smash Bros, and many other games with my friends into the wee hours of the night. If you ever want to play some games with me, check out my steam account to see what games I own and then shoot me a message and invite. I'll be glad to play some rounds with you when I have the time.</p>
+					</div>
+				</section>
 
+				<section class="getintouch">
+						<h3><span class="hl">Thanks</span> for Reading</h3>
+						<p>If you have any questions or want to talk, feel free to <span class="hl">contact</span> me.</p>
+						<div>
+							<div>
+								<img src="resources/icons/phone.svg" height="50px"></img><p><a href="tel:503-475-9621">503 - 475 - 9621</a></p>
+							</div>
+							<div>
+								<img src="resources/icons/email.svg" height="50px"></img><p><a href="mailto:jiejia2@illinois.edu">jiejia2@illinois.edu</a></p>
+							</div>
+						</div>
+					</section>
+					<section class="contactme" id="contact">
+
+						<a href="http://facebook.com/plusgin" target="_blank">
+							<svg id="Facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 430.113 430.114">
+								<g>
+									<path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+										c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+										c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+								</g>
+							</svg>
+						</a>
+						<a href="http://github.com/jimmy-jia" target="_blank">
+							<svg id="Github" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 90 90">
+								<g>
+									<path d="M65.709,10.5c1.17,2.657,1.928,7.07,0.797,10.301c4.625,3.949,6.215,13.549,3.982,21.394
+										C77.08,42.698,84.932,41.953,90,43.976c-4.738-0.609-11.209-1.804-17.32-1.388c-1.158,0.079-2.873-0.044-2.789,1.585
+										c7.074,0.555,14.104,1.16,19.912,2.973c-5.761-0.941-12.754-2.375-19.912-2.574c-2.957,5.835-8.908,8.703-17.123,9.307
+										c0.883,1.922,2.574,2.653,2.987,5.744c0.616,4.618-0.964,11.381,0.595,14.459c0.748,1.475,1.967,1.514,2.789,2.775
+										c-2.012,2.381-7-0.268-7.568-2.775c-0.973-4.295,1.482-10.953-1.192-13.865c0.188,4.685-1.108,11.264,0.199,15.449
+										c0.515,1.646,2.002,2.281,1.593,3.766c-9.352,0.949-5.443-12.104-6.972-19.81c-1.411,0.101-0.791,2.113-0.796,2.972
+										c-0.04,7.524,1.54,17.844-6.57,16.838c-0.237-1.582,1.088-2.119,1.593-3.563c1.479-4.233-0.277-10.542,0.401-15.651
+										c-3.095,2.334,0.325,10.48-1.593,14.657c-1.105,2.404-4.666,3.45-7.367,2.377c0.352-1.79,2.2-1.501,2.984-3.169
+										c1.096-2.324,0.008-5.674,0.399-9.111c-5.729,1.144-10.173-0.166-12.348-3.764c-0.973-1.615-1.214-3.52-2.39-4.951
+										c-1.17-1.432-3.04-1.625-3.582-3.563c7.095-1.708,7.367,7.302,13.739,7.524c1.954,0.071,2.97-0.563,4.778-0.988
+										c0.506-2.272,1.589-3.967,3.186-5.153c-7.929-1.085-14.477-3.554-17.522-9.504c-7.208,0.354-13.804,1.317-19.913,2.771
+										c5.545-2.014,12.384-2.736,19.715-2.973c-0.432-2.596-4.219-1.882-6.57-1.782C8.973,42.781,3.473,43.324,0,43.976
+										c5.034-1.795,12.098-1.571,18.918-1.585c-2.086-6.54-1.363-16.929,3.186-20.798C20.815,18.344,21.215,13.03,22.9,10.5
+										c5.079,0.228,8.159,2.443,11.35,4.557c3.957-1.125,8.118-1.685,13.54-1.387c2.28,0.126,4.651,1.151,6.369,0.989
+										c1.685-0.158,3.542-2.049,5.178-2.771C61.468,10.947,63.271,10.588,65.709,10.5z"/>
+								</g>
+							</svg>
+						</a>
+						<a href="https://www.linkedin.com/in/jimmyjia" target="_blank">
+							<svg id="Linkedin" width="44" height="44" viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+								<g id="svg_1">
+									<path d="m494.117,307.543l0,159.017l-92.18802,0l0,-148.367c0,-37.271 -13.33398,-62.707 -46.70297,-62.707c-25.47302,0 -40.63202,17.142 -47.30103,33.724c-2.43201,5.92801 -3.05798,14.17899 -3.05798,22.47699l0,154.87302l-92.21901,0c0,0 1.242,-251.285 0,-277.32001l92.21001,0l0,39.30901c-0.18698,0.29399 -0.43002,0.61099 -0.60602,0.896l0.60602,0l0,-0.896c12.25101,-18.869 34.13,-45.82401 83.10199,-45.82401c60.673,-0.00099 106.15701,39.636 106.15701,124.81801zm-377.93401,-251.985c-31.548,0 -52.183,20.693 -52.183,47.90501c0,26.619 20.038,47.93999 50.959,47.93999l0.616,0c32.15901,0 52.15901,-21.317 52.15901,-47.93999c-0.60602,-27.21201 -20,-47.90501 -51.55101,-47.90501zm-46.70599,411.002l92.18401,0l0,-277.32001l-92.18401,0l0,277.32001z" id="LinkedIn"/>
+								</g>
+							</svg>
+						</a>
+						<a href="http://steamcommunity.com/id/Jaruri" target="_blank">
+							<svg id="Steam" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 90 90">
+							<g>
+								<path d="M83.266,33.541c0,4.582-3.729,8.298-8.328,8.298c-4.604,0-8.33-3.716-8.33-8.298s3.728-8.297,8.33-8.297
+									C79.537,25.244,83.266,28.959,83.266,33.541z M79.91,47.561l-10.086,8.594c0.109,0.686,0.183,1.383,0.183,2.098
+									c0,7.316-5.954,13.248-13.296,13.248c-6.334,0-11.623-4.414-12.963-10.32l-24.931-8.427c-1.97,1.49-4.419,2.386-7.083,2.386
+									C5.254,55.139,0,49.903,0,43.447c0-6.455,5.254-11.688,11.734-11.688c5.572,0,10.226,3.87,11.427,9.055l24.083,8.141
+									c2.346-2.369,5.581-3.854,9.166-3.934l3.607-10.924c-0.011-0.217-0.033-0.431-0.033-0.65c0-8.255,6.72-14.947,15.008-14.947
+									C83.279,18.5,90,25.192,90,33.447C90,39.987,85.779,45.531,79.91,47.561z M19.112,39.446c-1.402-2.514-4.093-4.217-7.184-4.217
+									c-4.538,0-8.217,3.665-8.217,8.185c0,4.52,3.679,8.184,8.217,8.184c0.839,0,1.647-0.125,2.409-0.358l-3.904-1.319
+									c-3.146-1.678-4.33-5.579-2.645-8.713c1.686-3.132,5.602-4.31,8.745-2.632L19.112,39.446z M63.288,33.483
+									c0,6.412,5.218,11.61,11.655,11.61c6.437,0,11.658-5.198,11.658-11.61c0-6.415-5.222-11.613-11.658-11.613
+									C68.506,21.87,63.288,27.068,63.288,33.483z M63.518,59.389c0-4.881-3.973-8.84-8.873-8.84c-0.688,0-1.352,0.086-1.994,0.232
+									l4.959,1.676c3.145,1.68,4.326,5.58,2.642,8.711c-1.685,3.137-5.601,4.312-8.744,2.635l-5.344-1.807
+									c1.116,3.609,4.491,6.232,8.481,6.232C59.545,68.229,63.518,64.27,63.518,59.389z"/>
+							</g>
+							</svg>
+						</a>
+						
+					</section>
+					<form action="//formspree.io/jimmy.j.jia@gmail.com" method="POST" id="form">
+						<input type="text" name="name" placeholder="Name">
+						<input type="email" name="_replyto" placeholder="Email">
+						<textarea name="message" rows="4" placeholder="Your Message"></textarea>
+						<input type="submit" value="Send">
+						<input type="hidden" name="_subject" value="Personal Website!" />
+						<input type="text" name="_gotcha" style="display:none" />
+						<input type="hidden" name="_next" value="#" />
+					</form>
+				</div>
 			</div>
-			<div class="push"></div>
-		</div>
-		<div class="footer">
-			<p>Jimmy Jia - 2014-2015</p>
-		</div>
-		<script src='resources/js/jquery.min.js'></script>
-		<script>
-			$(document).ready(function() {
-    	    	$('.scrollup').click(function () {
-			        $("html, body").animate({
-			            scrollTop: 0
-			        }, 600);
-			        return false;
-	    		});
-    		});
-			$(".workimg").hover(function(){
-				$(".1").fadeTo(400, 1);
-			}, function(){
-				if($(document).width()>720)
-				$(".1").fadeTo(400, 0);
-			})			
-			$(".workimg2").hover(function(){
-				$(".2").fadeTo(400, 1);
-			}, function(){
-				if($(document).width()>720)
-				$(".2").fadeTo(400, 0);
-			})
-			var count=0;
-			function displaynav(){
-				var menu=document.getElementById("slider");
-				if (count==0){
-					$(menu).slideDown(400);
-					$(".header").css("background-color", "#43abc9");
-					count=1;
-				}
-				else{
-					$(menu).slideUp(400);
-					count=0;
-					$(".header").css("background-color", "#107896");
-				}
-			}
-		</script>
+			<footer>
+				© Jimmy Jia 2015. Design by <a href="index.html">Me</a>. Email me at <a href="mailto:jiejia2@illinois.edu">jiejia2@illinois.edu</a></footer>
+
 	</body>
 </html>

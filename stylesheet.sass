@@ -1,0 +1,777 @@
+$main-color: #E91E63
+$white: #F1F1F1
+$blue: #474F61
+$beige: #F7C59F
+$dark: #2A324B
+$black: #202020
+$gblue: #066DAB
+
+html, body
+	width: 100%
+	min-height: 100%
+	margin: 0
+	padding: 0
+	background-color: $white
+	overflow-x: hidden
+*
+	font-family: 'Open Sans', sans-serif
+	box-sizing: border-box
+.hide
+	display: none
+.wrapper
+	height: 100%
+.content
+	height: 100%
+p, a
+	color: $dark
+	font-family: 'Open Sans', sans-serif
+	line-height: 1.4
+
+a
+	color: $main-color
+	transition: color .4s
+	text-decoration: none
+	&:hover
+		color: $dark
+ul, li
+	list-style: none
+
+h1, h2
+	display: inline-block
+	color: $white
+	margin: 0
+	padding: 0
+	padding-left: 20px
+	font-family: 'Source Sans Pro', sans-serif
+	font-style: italic
+	text-shadow: 0 0 5px rgba(white, .5)
+h1
+	font-size: 500%
+h2
+	font-size: 300%
+	font-family: 'Montserrat-Light', sans-serif
+h3
+	color: #4a4a4a
+	margin: 0
+	padding: 0
+	font-style: normal
+	font-family: 'Varela'
+	text-transform: uppercase
+	font-size: 300%
+.hl
+	color: $main-color
+header
+	position: fixed
+	z-index: 100
+	top: 0
+	width: 100%
+	height: 50px
+	background-color: $dark
+	box-shadow: 0 0 10px 3px rgba($blue, .5)
+	#me
+		margin-left: 15px
+		margin-top: 4px
+		font-family: 'Open Sans', sans-serif
+		font-style: italic
+	nav
+		float: right
+	a
+		color: $main-color
+		text-shadow: 0 0 3px rgba($white, .1)
+		font-family: 'Open Sans Condensed', sans-serif
+		font-weight: 300
+		text-decoration: none
+		font-size: 200%
+		margin-right: 10px
+		transition: color .4s
+		&:hover
+			color: $white
+	#mobnav
+		display: none
+.intro
+	padding-top: 150px
+	background-color: $main-color
+	background: rgb(233,30,99)
+	background: -moz-linear-gradient(45deg, rgba(233,30,99,1) 0%, rgba(6,109,171,1) 100%) 
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(233,30,99,1)), color-stop(100%,rgba(6,109,171,1))) 
+	background: -webkit-linear-gradient(45deg, rgba(233,30,99,1) 0%,rgba(6,109,171,1) 100%) 
+	background: -o-linear-gradient(45deg, rgba(233,30,99,1) 0%,rgba(6,109,171,1) 100%) 
+	background: -ms-linear-gradient(45deg, rgba(233,30,99,1) 0%,rgba(6,109,171,1) 100%)
+	background: linear-gradient(45deg, rgba(233,30,99,1) 0%,rgba(6,109,171,1) 100%)
+	background: linear-gradient(230deg, $main-color, $gblue)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e91e63', endColorstr='#066dab',GradientType=1 )
+	background-size: 200% 200%
+	-webkit-animation: BackgroundWave 11s ease infinite
+	-moz-animation: BackgroundWave 11s ease infinite
+	-o-animation: BackgroundWave 11s ease infinite
+	animation: BackgroundWave 11s ease infinite
+	height: 100vh
+	width: 100%
+	div
+		vertical-align: top
+		//display: inline-block
+		margin: 0 auto
+		width: 940px
+		max-width: 100%
+		h1:first-child, h2:nth-child(2)
+			display: inline-block
+		h1, h2
+			opacity: 0
+			position: relative
+			left: -600px
+		h1:last-child
+			margin-top: 20px
+	#down
+		border: 1px solid $white
+		border-radius: 5px
+		color: $white
+		padding: 20px
+		font-size: 200%
+		font-family: 'Open Sans Condensed', sans-serif
+		margin: 0 auto
+		margin-top: 50px
+		display: block
+		width: 200px
+		text-overflow: none
+		text-align: center
+		text-decoration: none
+		transition: all .4s
+		&:hover
+			color: white
+			border: 1px solid white
+			background-color: rgba($white, .2)
+			box-shadow: 0 0 5px 1px rgba($white, .1)
+
+.subintro
+	margin: 0 auto
+	h1
+		padding-left: 0
+		font-size: 300%
+		color: $white
+		text-align: center
+		margin: 0 auto
+		display: block
+		text-shadow: 3px 3px 5px rgba($dark, .5)
+		//animation: TextAnim 11s infinite
+
+	#whatido
+		padding: 80px 0
+		max-width: 100%
+		width: 800px
+		margin: 0 auto
+		h3, p
+			text-align: center
+		p
+			margin: 0
+			padding-top: 5px
+		p:nth-child(2)
+			font-size: 125%
+			color: #777
+		p:nth-child(3)
+			font-size: 110%
+			color: #999
+		p:nth-child(4)
+			font-size: 100%
+			color: #aaa
+		a
+			padding-top: 10px
+			font-size: 130%
+			display: block
+			width: 130px
+			margin: 0 auto
+
+	#skills
+		background-color: $gblue
+		background-image: url(resources/pics/subliey.jpg)
+		background-repeat: no-repeat
+		background-position: center
+		width: 100%
+		height: 600px
+		position: relative
+		div
+			height: 100%
+			width: 100%
+			background-color: rgba($gblue, .2)
+			position: absolute
+
+.toolbar
+	position: relative
+	z-index: 1
+	h3
+		padding-top: 50px
+		text-align: center
+		color: $white
+		text-shadow: 0 0 10px $black
+	p:nth-child(2)
+		text-align: center
+		font-size: 120%
+		color: #ccc
+		text-shadow: 0 0 10px $black
+
+.skillbox
+	background-color: rgba($white, .3)
+	display: flex
+	flex-wrap: wrap
+	width: 700px
+	max-width: 100%
+	padding-top: 20px
+	margin: 0 auto
+	padding-bottom: 20px
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	justify-content: center
+	transition: background-color .4s
+	img
+		height: 80px
+		padding: 10px
+		transition: all .4s
+		&:hover
+			-webkit-transform: scale(1.6)
+			-ms-transform: scale(1.6)
+			transform: scale(1.6)
+	&:hover
+		background-color: $white
+
+#examples
+	margin-top: 50px
+	h3, p:nth-child(2)
+		text-align: center
+	p:nth-child(2)
+		color: #777
+		font-size: 120%
+#gallery
+	margin-top: 50px
+	background-color: $gblue
+	div
+		div
+			height: 600px
+			width: 100%
+			background-size: contain
+			background-repeat: no-repeat
+.right
+	top: 50%
+	position: absolute
+	right: 0
+	background-image: url(resources/icons/right.svg)
+	content: ""
+	width: 80px
+	height: 80px
+	background-color: rgba($main-color, .3)
+	border: 0
+	background-size: cover
+	transition: background-color .4s
+	z-index: 20
+	&:hover
+		background-color: rgba($main-color, .9)
+		cursor: pointer
+	&:focus, &:active
+		outline: none
+.left
+	@extend .right
+	background-image: url(resources/icons/left.svg)
+	left: 0
+	background-color: rgba($gblue, .3)
+	&:hover
+		background-color: rgba($gblue, .9)
+#cephei
+	position: relative
+	> div:first-child
+		background-image: url(resources/pics/cepheilaptop.jpg)
+		background-position: right
+		background-color: $main-color
+		display: flex
+		justify-content: center
+		flex-direction: column
+		position: relative
+		div:first-child
+			background-color: rgba($main-color, .2)
+			width: 100%
+			position: absolute
+			top: 0
+		div:nth-child(2)
+			padding-left: 40px
+			position: relative
+			z-index: 5
+			height: auto
+			h3, a, p
+				text-shadow: 0 0 3px rgba(#212121, .7)
+			h3
+				font-family: 'Montserrat Ultralight', sans-serif
+				text-align: left
+				color: $white
+				font-size: 150%
+				text-transform: none
+				span 
+					font-family: 'Poiret One', sans-serif
+					font-size: 170%
+			a
+				font-family: 'Poiret One', sans-serif
+				padding-left: 40px
+				color: darken($white, 5)
+				font-size: 130%
+				&:hover
+					color: white
+				span
+					font-family: inherit
+					color: $white
+					&:hover
+						color: $white
+			p:nth-child(3)
+				display: inline-block
+				margin: 0
+				padding-left: 5px
+				color: $white
+			p:nth-child(4)
+				font-family: 'Montserrat Ultralight'
+				color: white //darken($white, 10)
+				line-height: 1.9
+
+	> div:nth-child(2)
+		background-color: $gblue
+		background-image: url(resources/pics/cep.jpg)
+		background-position: left
+		display: flex
+		justify-content: center
+		flex-direction: column
+		position: absolute
+		top: 0
+		left: 100vw
+		div:first-child
+			background-color: rgba($gblue, .2)
+			width: 100%
+			position: absolute
+			top: 0
+			transition: background-color 1s
+			//&:hover
+			//	background-color: transparent
+		div:nth-child(2)
+			height: auto
+			padding-right: 40px
+			text-align: right
+			position: relative
+			z-index: 5
+			h3, a, p
+				text-shadow: 0 0 3px rgba(#212121, .7)
+			h3
+				font-family: 'Montserrat Ultralight', sans-serif
+				text-align: right
+				color: $white
+				font-size: 150%
+				text-transform: none
+				span
+					font-family: 'Poiret One', sans-serif
+					font-size: 170%
+			a
+				font-family: 'Poiret One', sans-serif
+				color: darken($white, 5)
+				font-size: 130%
+				&:hover
+					color: white
+				span
+					font-family: inherit
+					color: $white
+					&:hover
+						color: $white
+			p:nth-child(3)
+				display: inline-block
+				margin: 0
+				padding-right: 5px
+				color: $white
+			p:nth-child(4)
+				font-family: 'Montserrat Ultralight'
+				color: white //darken($white, 10)
+				line-height: 1.9
+
+
+.getintouch
+	padding-top: 50px
+	> div
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		width: 300px
+		max-width: 100%
+		div
+			max-width: 100%
+			margin: 0 auto
+			p, img
+				display: inline-block
+			p
+				margin-left: 15px
+				vertical-align: top
+		div:first-child
+			img
+				margin-right: 15px
+			p
+				margin-left: 0
+				margin-right: 19px
+	> p:nth-child(2)
+		font-size: 120%
+		color: #777
+		text-align: center
+		width: 100%
+		
+	h3
+		text-align: center
+
+
+.contactme
+	display: flex
+	justify-content: center
+	margin-bottom: 15px
+	margin-top: 15px
+	a
+		margin-right: 10px
+		margin-left: 10px
+		svg
+			background-color: $blue
+			padding: 10px
+			fill: $white
+			transition: fill .4s, background-color .4s, border .4s, padding .4s
+			border-radius: 50%
+			border: 1px solid transparent
+			&:hover
+				background-color: $white
+				//-webkit-animation: spin .7s ease-in-out
+				//-moz-animation: spin .7s linear
+				//animation: spin .7s ease-in-out
+				padding: 5px
+		#Facebook
+			&:hover
+				fill: #3b5998
+				border: 1px solid #3b5998
+		#Github
+			&:hover
+				fill: #333
+				border: 1px solid #333
+		#Linkedin
+			&:hover
+				fill: #007bb6
+				border: 1px solid #007bb6
+		#Steam
+			&:hover
+				fill: #212121
+				border: 1px solid #212121
+
+
+#form
+	max-width: 100%
+	margin: 0 auto
+	padding: 20px 0
+	background-color: #c4c4c4
+	display: block
+	input, textarea
+		padding: 20px
+		display: block
+		max-width: 100%
+		width: 400px
+		margin: 0 auto
+		background-color: $white
+		color: $black
+		border: 0
+		border-bottom: 2px solid $gblue
+		transition: background-color .4s
+		box-sizing: border-box
+		font-family: 'Open Sans', sans-serif
+		&::-webkit-input-placeholder
+			color: $blue
+		&::-moz-placeholder
+			color: $blue
+		&:-moz-placeholder
+			color: $blue
+		&:-ms-input-placeholder
+			color: $blue
+
+		&:hover
+			border-bottom: 4px solid $gblue
+			padding-bottom: 18px
+		&:focus, &:active
+			outline: none
+			border-bottom: 4px solid $gblue
+			padding-bottom: 18px
+			background-color: white
+			color: $gblue !important
+			&::-webkit-input-placeholder
+				color: $gblue
+			&::-moz-placeholder
+				color: $gblue
+			&:-moz-placeholder
+				color: $gblue
+			&:-ms-input-placeholder
+				color: $gblue
+	input[type=submit]
+		background-color: $gblue
+		background: #066DAB
+		background-image: -webkit-linear-gradient(top, #066DAB, #2980b9)
+		background-image: -moz-linear-gradient(top, #066DAB, #2980b9)
+		background-image: -ms-linear-gradient(top, #066DAB, #2980b9)
+		background-image: -o-linear-gradient(top, #066DAB, #2980b9)
+		background-image: linear-gradient(to bottom, #066DAB, #2980b9)
+		font-family: 'Montserrat', sans-serif
+		font-size: 120%
+		transition: all .4s
+		color: white
+		&:hover
+			background: #3cb0fd
+			background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db)
+			background-image: -moz-linear-gradient(top, #3cb0fd, #3498db)
+			background-image: -ms-linear-gradient(top, #3cb0fd, #3498db)
+			background-image: -o-linear-gradient(top, #3cb0fd, #3498db)
+			background-image: linear-gradient(to bottom, #3cb0fd, #3498db)
+			text-decoration: none
+			border-bottom: 2px solid $blue
+			padding-bottom: 20px
+textarea
+	border-bottom: 0 !important
+	&:hover, &:active, &:focus
+		border-bottom: 0px solid black !important
+		padding-bottom: 20px !important
+footer
+	text-align: center
+	padding: 10px
+	border-top: 2px solid rgba($dark, .3)
+	background-color: $dark
+	color: lighten($dark, 60)
+	font-family: 'Lato', sans-serif
+	box-shadow: 0 -5px 3px 0 rgba($dark, .2)
+	a:hover
+		color: $beige
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#aboutme
+	margin-top: 100px
+	width: 100%
+	p
+		max-width: 100%
+		width: 600px
+		margin: 0 auto
+		line-height: 1.4
+	h3
+		text-align: center
+		margin-bottom: 20px
+	img
+		margin: 0 auto
+		display: block
+		max-width: 100%
+		padding: 0
+	div
+		width: 100%
+		margin-bottom: 30px
+	div:nth-child(3)
+		background-color: $blue
+	div:nth-child(5)
+		background-color: $main-color
+
+
+.illini
+	color: #ff8800
+// FONT FACE //
+
+@font-face
+	font-family: 'Montserrat Light'
+	src: url(resources/fonts/Montserrat-Light.otf)
+@font-face
+	font-family: 'Montserrat Ultralight'
+	src: url(resources/fonts/Montserrat-UltraLight.otf)
+
+
+// ANIMATIONS //
+
+@-webkit-keyframes BackgroundWave
+	0%
+		background-position: 97% 0%
+	50%
+		background-position: 4% 100%
+	100%
+		background-position: 97% 0%
+
+@-moz-keyframes BackgroundWave
+	0%
+		background-position: 97% 0%
+	50%
+		background-position: 4% 100%
+	100%
+		background-position: 97% 0%
+
+@-o-keyframes BackgroundWave
+	0%
+		background-position: 97% 0%
+	50%
+		background-position: 4% 100%
+	100%
+		background-position: 97% 0%
+
+@keyframes BackgroundWave
+	0%
+		background-position: 97% 0%
+	50%
+		background-position: 4% 100%
+	100%
+		background-position: 97% 0%
+
+@-webkit-keyframes TextAnim
+	0%
+		color: $main-color
+	50%
+		color: $gblue
+	100%
+		color: $main-color
+
+@-moz-keyframes TextAnim
+	0%
+		color: $main-color
+	50%
+		color: $gblue
+	100%
+		color: $main-color
+
+@-o-keyframes TextAnim
+	0%
+		color: $main-color
+	50%
+		color: $gblue
+	100%
+		color: $main-color
+
+@keyframes TextAnim
+	0%
+		color: $main-color
+	50%
+		color: $gblue
+	100%
+		color: $main-color
+
+@-moz-keyframes spin
+	100%
+		-moz-transform: rotate(360deg)
+@-webkit-keyframes spin
+	100%
+		-webkit-transform: rotate(360deg)
+@keyframes spin
+	100%
+		-webkit-transform: rotate(360deg)
+		transform: rotate(360deg)
+
+
+/// 1.96:1 ratio for examples
+
+@media (max-width: 1000px)
+	h1
+		font-size: 6.2vw
+	h2
+		font-size: 5.2vw
+	h3
+		font-size: 10vw
+	#examples
+		#gallery
+			#cephei
+				#cep1, #cep2
+					background-position: center
+					height: auto
+					div:first-child
+						height: 100%
+						background-color: rgba(black, .3)
+					div:nth-child(2)
+						padding: 30px
+
+@media (max-width: 700px)
+	header
+		a:first-child
+			color: white
+			&:hover
+				color: $main-color
+		nav
+			display: none
+			width: 100%
+			height: 100%
+			background-color: $main-color
+			position: fixed
+			top: 0
+			a:first-child
+				margin-top: 30%
+
+			a
+				font-family: 'Montserrat', sans-serif
+				padding: 20px
+				text-align: center
+				color: $gblue
+				color: white
+				display: block
+				transition: background-color .4s
+				margin: 0
+				&:hover
+					background-color: $blue
+		#mobnav
+			width: 44px
+			height: 44px
+			display: block
+			float: right
+			position: relative
+			z-index: 100
+			&:hover
+				cursor: pointer
+	.subintro
+		#whatido
+			p:nth-child(2)
+				font-size: 4vw
+			p:nth-child(3)
+				font-size: 3.7vw
+			p:nth-child(4)
+				font-size: 3.5vw
+			a:nth-child(5)
+				font-size: 4.5vw
+				width: auto
+				text-align: center
+	#examples
+		#gallery
+			#cephei
+				#cep1, #cep2
+					div:nth-child(2)
+						h3
+							font-size: 4vw
+						a:nth-child(2)
+							font-size: 3.5vw
+						p:nth-child(3)
+							font-size: 2.8vw
+
+						p:nth-child(4)
+							font-size: 3vw
+							line-height: 1.3
+							br
+								display: none
+	.right
+		top: calc(50% - 3vw)
+		width: 10vw
+		height: 10vw
+	footer
+		margin-top: 30px
+	.aboutpad
+		p
+			padding: 0 10px
+@media (max-width: 400px)
+	#introanim
+		h1, h2
+			padding-top: 10px
+		h2:nth-child(2)
+			padding-left: 5px
+	#form
+		padding: 0
+		box-shadow: 0 0 3px 3px rgba(#ccc, .5)

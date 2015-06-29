@@ -1,215 +1,271 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Jimmy Jia</title>
-		<meta charset="utf-8">
-		<meta name="description" content="Jimmy Jia - Web Developer and Designer">
+		<title>Jimmy Jia - Web Developer</title>
+		<meta name="description" content="Hi, I'm Jimmy Jia, a web developer. I love creating and learning new things.">
 		<meta name="keywords" content="jimmy, jia, web, dev, developer, designer, design, website, css, html, javascript, jquery, hire">
-		<link href="resources/css/stylesheet.css" rel="stylesheet" type="text/css">
-		<link href="resources/css/fonts.css" rel="stylesheet" type="text/css">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta charset="utf-8">
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400|Open+Sans+Condensed:300|Lato|Montserrat|Source+Sans+Pro:400,700italic|Varela|Poiret One' rel='stylesheet' type='text/css'>
 		<link rel="icon" href="favicon.ico">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="resources/js/jquery-ui.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="header">
-				<a href="index.html" class="mobilehead">Jimmy Jia</a>
-				<ul class="topbar" id="topup">
-					<li><a href="#"><span></span>HOME</a></li>
-					<li><a href="about.html"><span></span>ABOUT</a></li>
-					<li><a href="design.html"><span></span>DESIGN</a></li>
-					<li><a href="resume.html"><span></span>RESUME</a></li>
-					<li><a href="contact.html"><span></span>CONTACT</a></li>
-				</ul>
-				<button onclick="displaynav()" id="sliderb"><img src="resources/icons/menu.svg" class="svgw" height="40px" alt="dropdown button"></button>
-			</div>
-				<ul class="topbar" id="slider">
-					<li><a href="#"><span></span>HOME</a></li>
-					<li><a href="about.html"><span></span>ABOUT</a></li>
-					<li><a href="design.html"><span></span>DESIGN</a></li>
-					<li><a href="resume.html"><span></span>RESUME</a></li>
-					<li><a href="contact.html"><span></span>CONTACT</a></li>
-				</ul>
-			<div class="bg"></div>
-			<div class="title">
-				<img class="me" src="resources/pics/bcme.png" alt="picture of Jimmy Jia">				
-				<p><span>Hi! I'm</span> Jimmy Jia</p>
-				<p>a Frontend Web Developer</p>
-			</div>
-			<div class="content">
-				<div class="items">
-					<div class="info">
-						<p>If you're looking for someone to create your new website, you've come to the right place!</p>
+			<header>
+				<a href="#" id="me">Jimmy Jia</a>
+				<a id="mobnav" onclick="mobnav(0)">
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+						<g>
+							<path class="svgw" d="M4.5,9h8C12.775,9,13,8.775,13,8.5C13,8.224,12.775,8,12.5,8h-8C4.224,8,4,8.224,4,8.5C4,8.775,4.224,9,4.5,9z" fill="white"/>
+							<path class="svgw" d="M4.5,6h8C12.775,6,13,5.776,13,5.5S12.775,5,12.5,5h-8C4.224,5,4,5.224,4,5.5S4.224,6,4.5,6z" fill="white"/>
+							<path class="svgw" d="M4.5,12h8c0.275,0,0.5-0.225,0.5-0.5S12.775,11,12.5,11h-8C4.224,11,4,11.225,4,11.5S4.224,12,4.5,12z" fill="white"/>
+						</g>
+					</svg>
+				</a>
+				<nav id="navigation">
+					<a href="#" onclick="mobnav(800)" id="homebutton">Home</a>
+					<a href="about.html">About Me</a>
+					<a href="#" onclick="mobnav(800)" id="skillsbutton">Skills</a>
+					<a href="#" onclick="mobnav(800)" id="examplesbutton">Examples</a>
+					<a href="#" onclick="mobnav(800)" class="contactbutton">Contact</a>
+					
+				</nav>
+			</header>
+			<div class="content" id="top">
+				<div class="intro">
+					<div id="introanim">
+						<h1>Hi,</h1>
+						<h2>I'm Jimmy.</h2><br>
+						<h2>And boy am I glad to see you.</h2><br>
+						<h1>I'm bored.</h1><br>
+						<h2>And I want to work with you on that<br> project you've been thinking about.</h2><br>
+						<h1>Lets Build Something Cool.</h1>
 					</div>
-					<p class="centertext whyme">Who am <span class="bold">I</span>?</p>
-					<p class="centertext otf pad">I'm <span class="bold">Jimmy Jia</span>, a sophomore in Electrical Engineering at the <br><a href="http://illinois.edu" class="switch">University of Illinois: <i>Urbana - Champaign.</i></a></p>
-					<p class="centertext whyme">What do I <span class="bold">do</span>?</p>
-					<p class="centertext otf pad">I'm a front end web developer. I do <i><b>research, design, coding, and optimization</i></b>.
-						<br>I create websites and web-apps using cutting edge technology and timeless design.</p><br>
-					<p class="centertext whyme">What <b>technologies</b> do I use?</p>
-					<div class="flexbox pad">
-						<a href="http://en.wikipedia.org/wiki/HTML5" target="_blank"><img src="resources/pics/html5.png" alt="html5"></img></a>
-						<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank"><img src="resources/pics/css3.png" alt="css3"></img></a>
-						<a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="resources/pics/js.png" alt="javascript"></img></a>
-						<a href="http://jquery.com" target="_blank"><img src="resources/pics/jquery.png" alt="jquery"></img></a>
-						<a href="http://firebase.com" target="_blank"><img src="resources/pics/firebase.png" alt="firebase"></img></a>
-						<a href="http://wordpress.org" target="_blank"><img src="resources/pics/wp.png" alt="wordpress"></img></a>
-						<a href="http://github.com" target="_blank"><img src="resources/pics/github.png" alt="github"></img></a>
-					</div>
-					<p class="centertext whyme">Why should <span class="bold">YOU</span> choose <span class="bold">ME?</span></p>
-					<div class="flexbox pad">
-						<div>
-							<p>Responsive Design</p>
-							<div class="center"><img src="resources/icons/test.svg" alt="img of phone"><img src="resources/icons/plus.svg" height="64px" alt="move freely between phone and computer"><img src="resources/icons/computer.svg" alt="img of computer"></div>
-							<p>With responsive design, your site will look perfect no matter what device your site is viewed on.</p>
-						</div>
-						<div>
-							<p>Affordable Pricing</p>
-							<img src="resources/icons/money.svg" height="68px">
-							<p>I charge reasonable prices for my services. You won't have to break the bank to have a great website.</p>
-						</div>
-						<div>
-							<p>Superior Service</p>
-							<img src="resources/icons/awyea.svg" height="68px">
-							<p>Fast response times, great communication, guarenteed. You'll love your entire experience!</p>
-						</div>
-					</div>
-					<p class="centertext whyme">What do you mean by "<span class="bold">Responsive Design?</span>"</p>
-					<div><img src="resources/pics/responsive.png" class="fullwidth" alt="responsive example"></img></div>
-					<p class="restxt centertext">Any device just works.</p>
-					<p class="centertext whyme"><span class="bold">Experience</span></p>
-					<p class="centertext">I currently work at <a href="http://researchpark.illinois.edu/enterpriseworks" target="_blank" class="switch">EnterpriseWorks</a> as a web developer intern. I design and create websites for the various startups that are located within the EnterpriseWorks Incubator. I work together with the team at EnterpriseWorks and the clients, to create a wide variety of websites to suit their wide range of needs.</p>
-					<!--
-					<p class="centertext whyme">Here are some samples of <span style="font-weight:bold">My Projects</span></p>
-					<div class="work">
-						<div>
-							<a href="http://cephei.us" target="_blank">
-								<img class="workimg" src="resources/pics/cephei.png" alt="picture of cephei.us"><div class="imgr"></div></img>
-								<div class="position">
-									<div class="imgup 1">
-										<p>cephei.us</p>
-										<p>Personal Project</p>
-										<p>Realtime Music Discovery</p>
-										<p>Firebase powered realtime music sharing.</p>
-										<p>Created with HTML5/CSS3/Javascript</p>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div>
-							<a href="http://foodseeker.net" target="_blank">
-								<img class="workimg2" src="resources/pics/foodseeker.png" alt="picture of foodseeker"><div class="imgr"></div></img>
-								<div class="position">
-									<div class="imgup 2">
-										<p>Foodseeker.net</p>
-										<p>Personal Project (WIP)</p>
-										<p>Random Restaurant Selector</p>
-										<p>Yelp API powered food seeker web app.</p>
-										<p>Created with HTML5/CSS3/Javascript</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>-->
-					<div class="rotwrap">
-						<div class="rotitem display" id="slide1">
-							<p>Here are some examples of my work</p>
-							<p>Click on the buttons below to browse</p>
-							<p>&lt; / &gt;</p>
-						</div>
-						<div class="rotitem" id="slide2">
-							<a href="http://cephei.us" target="_blank">cephei.us</a>
-							<p>cephei.us is a realtime music discovery platform. It shows users videos submitted by other users in real time, and features a search function to find the music you want to hear. Written in HTML5/CSS3/JS and uses the FireBase API for the backend.</p>
-						</div>
-						<div class="rotitem" id="slide3">
-							<a href="http://jimmy-jia.github.io/hackerneue/" target="_blank">hackerneue</a>
-							<p>Hackerneue is a quick project using the HackerNews API to create a auto loading mobile friendly website</p>
-
-						</div>
-						<div class="rotitem" id="slide4">
-							<a href="http://foodseeker.net" target="_blank">foodseeker.net</a>
-							<p>foodseeker.net is a Yelp powered food finding web app. It was created with HTML5/CSS3/JS with the Yelp API</p>
-						</div>
-						<ul class="rotnav">
-							<li><button onclick="nav(1)">home</button></li>
-							<li><button onclick="nav(2)">cephei.us</button></li>
-							<li><button onclick="nav(3)">hackerneue</button></li>
-							<li><button onclick="nav(4)">foodseeker</button></li>
-						</ul>
-					</div>
-					<button class="abutton scrollup"><img src="resources/icons/up.svg" alt="scroll back up"></img></button>
+					<a href="#info" id="down">Learn More</a>
 				</div>
+				<div class="subintro" id="info">
+					<section id="whatido">
+						<h3>Who am <span class="hl">i</span>?</h3>
+						<p>I'm Jimmy Jia, and I'm a web developer.</p>
+						<p>I'm a builder, a problem solver, an artist, all in one.</p>
+						<p>Lets work together and make something awesome.</p>
+						<a href="#" class="contactbutton">Contact Me</a>
 
+					</section>
+					<section id="skills">
+						<div></div>
+						<section class="toolbar">
+							<h3>My <span class="hl">Toolbelt</span></h3>
+							<p>The tools of my trade</p>
+							<section class="skillbox">
+								<a href="http://en.wikipedia.org/wiki/HTML5" target="_blank"><img src="resources/pics/html5.png" alt="html5"></img></a>
+								<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank"><img src="resources/pics/css3.png" alt="css3"></img></a>
+								<a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="resources/pics/js.png" alt="javascript"></img></a>
+								<a href="http://jquery.com" target="_blank"><img src="resources/pics/jquery.png" alt="jquery"></img></a>
+								<a href="http://sass-lang.com" target="_blank"><img src="resources/pics/sass.png" alt="sass"></img></a>
+								<a href="http://firebase.com" target="_blank"><img src="resources/pics/firebase.png" alt="firebase"></img></a>
+								<a href="https://octobercms.com/" target="_blank"><img src="resources/pics/october.png" alt="octobercms"></img></a>
+								<a href="http://github.com" target="_blank"><img src="resources/pics/github.png" alt="github"></img></a>
+							</section>
+						</section>
+					</section>
+					<section id="examples">
+						<h3>My <span class="hl">work</span></h3>
+						<p>Examples of whats in store for you.</p>
+						<div id="gallery">
+							<div id="cephei">
+								<div id="cep1">
+									<div></div>
+									<div>
+										<h3><span>cephei.us</span> - Realtime Music Sharing</h3>
+										<a href="http://cephei.us/new" target="_blank"><span>link:</span> cephei.us</a>
+										<p>&#8211; &nbsp;Personal Project - HTML/CSS/JS/Firebase</p>
+										<p>One thing I love about music is the community. <br>
+											In the music community,	everyone has the mutual love of music. <br>
+											My love of music led me to create cephei.us, a realtime<br>
+											music sharing platform, built for the community.<br>
+											</p>
+									</div>
+									<button class="right"></button>
+								</div>
+								<div id="cep2">
+									<div></div>
+									<div>
+										<h3><span>cephei.us</span> - Responsive Music Sharing</h3>
+										<a href="http://cephei.us/new" target="_blank"><span>link:</span> cephei.us</a>
+										<p>&#8211; &nbsp;Personal Project - HTML/CSS/JS/Firebase</p>
+										<p>Gone are the days of mobile redirects, tables, and flash powered sites.<br>
+											Now, "Responsive Design" is all the rage - a new approach that changes a page <br>
+											based on how you're looking at it. That means phone, tablet, or PC will <br>
+											all have a beautiful experience without making any sacrifices.</p>
+									</div>
+									<button class="left"></button>
+								</div>
+								
+							</div>
+						</div>
+					</section>
+					<section class="getintouch">
+						<h3>Get in <span class="hl">Touch</span></h3>
+						<p>Have a question you're just <span class="hl">burning</span> to ask me?</p>
+						<div>
+							<div>
+								<img src="resources/icons/phone.svg" height="50px"></img><p><a href="tel:503-475-9621">503 - 475 - 9621</a></p>
+							</div>
+							<div>
+								<img src="resources/icons/email.svg" height="50px"></img><p><a href="mailto:jiejia2@illinois.edu">jiejia2@illinois.edu</a></p>
+							</div>
+						</div>
+					</section>
+					<section class="contactme" id="contact">
+
+						<a href="http://facebook.com/plusgin" target="_blank">
+							<svg id="Facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 430.113 430.114">
+								<g>
+									<path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+										c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+										c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+								</g>
+							</svg>
+						</a>
+						<a href="http://github.com/jimmy-jia" target="_blank">
+							<svg id="Github" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 90 90">
+								<g>
+									<path d="M65.709,10.5c1.17,2.657,1.928,7.07,0.797,10.301c4.625,3.949,6.215,13.549,3.982,21.394
+										C77.08,42.698,84.932,41.953,90,43.976c-4.738-0.609-11.209-1.804-17.32-1.388c-1.158,0.079-2.873-0.044-2.789,1.585
+										c7.074,0.555,14.104,1.16,19.912,2.973c-5.761-0.941-12.754-2.375-19.912-2.574c-2.957,5.835-8.908,8.703-17.123,9.307
+										c0.883,1.922,2.574,2.653,2.987,5.744c0.616,4.618-0.964,11.381,0.595,14.459c0.748,1.475,1.967,1.514,2.789,2.775
+										c-2.012,2.381-7-0.268-7.568-2.775c-0.973-4.295,1.482-10.953-1.192-13.865c0.188,4.685-1.108,11.264,0.199,15.449
+										c0.515,1.646,2.002,2.281,1.593,3.766c-9.352,0.949-5.443-12.104-6.972-19.81c-1.411,0.101-0.791,2.113-0.796,2.972
+										c-0.04,7.524,1.54,17.844-6.57,16.838c-0.237-1.582,1.088-2.119,1.593-3.563c1.479-4.233-0.277-10.542,0.401-15.651
+										c-3.095,2.334,0.325,10.48-1.593,14.657c-1.105,2.404-4.666,3.45-7.367,2.377c0.352-1.79,2.2-1.501,2.984-3.169
+										c1.096-2.324,0.008-5.674,0.399-9.111c-5.729,1.144-10.173-0.166-12.348-3.764c-0.973-1.615-1.214-3.52-2.39-4.951
+										c-1.17-1.432-3.04-1.625-3.582-3.563c7.095-1.708,7.367,7.302,13.739,7.524c1.954,0.071,2.97-0.563,4.778-0.988
+										c0.506-2.272,1.589-3.967,3.186-5.153c-7.929-1.085-14.477-3.554-17.522-9.504c-7.208,0.354-13.804,1.317-19.913,2.771
+										c5.545-2.014,12.384-2.736,19.715-2.973c-0.432-2.596-4.219-1.882-6.57-1.782C8.973,42.781,3.473,43.324,0,43.976
+										c5.034-1.795,12.098-1.571,18.918-1.585c-2.086-6.54-1.363-16.929,3.186-20.798C20.815,18.344,21.215,13.03,22.9,10.5
+										c5.079,0.228,8.159,2.443,11.35,4.557c3.957-1.125,8.118-1.685,13.54-1.387c2.28,0.126,4.651,1.151,6.369,0.989
+										c1.685-0.158,3.542-2.049,5.178-2.771C61.468,10.947,63.271,10.588,65.709,10.5z"/>
+								</g>
+							</svg>
+						</a>
+						<a href="https://www.linkedin.com/in/jimmyjia" target="_blank">
+							<svg id="Linkedin" width="44" height="44" viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+								<g id="svg_1">
+									<path d="m494.117,307.543l0,159.017l-92.18802,0l0,-148.367c0,-37.271 -13.33398,-62.707 -46.70297,-62.707c-25.47302,0 -40.63202,17.142 -47.30103,33.724c-2.43201,5.92801 -3.05798,14.17899 -3.05798,22.47699l0,154.87302l-92.21901,0c0,0 1.242,-251.285 0,-277.32001l92.21001,0l0,39.30901c-0.18698,0.29399 -0.43002,0.61099 -0.60602,0.896l0.60602,0l0,-0.896c12.25101,-18.869 34.13,-45.82401 83.10199,-45.82401c60.673,-0.00099 106.15701,39.636 106.15701,124.81801zm-377.93401,-251.985c-31.548,0 -52.183,20.693 -52.183,47.90501c0,26.619 20.038,47.93999 50.959,47.93999l0.616,0c32.15901,0 52.15901,-21.317 52.15901,-47.93999c-0.60602,-27.21201 -20,-47.90501 -51.55101,-47.90501zm-46.70599,411.002l92.18401,0l0,-277.32001l-92.18401,0l0,277.32001z" id="LinkedIn"/>
+								</g>
+							</svg>
+						</a>
+						<a href="http://steamcommunity.com/id/Jaruri" target="_blank">
+							<svg id="Steam" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 90 90">
+							<g>
+								<path d="M83.266,33.541c0,4.582-3.729,8.298-8.328,8.298c-4.604,0-8.33-3.716-8.33-8.298s3.728-8.297,8.33-8.297
+									C79.537,25.244,83.266,28.959,83.266,33.541z M79.91,47.561l-10.086,8.594c0.109,0.686,0.183,1.383,0.183,2.098
+									c0,7.316-5.954,13.248-13.296,13.248c-6.334,0-11.623-4.414-12.963-10.32l-24.931-8.427c-1.97,1.49-4.419,2.386-7.083,2.386
+									C5.254,55.139,0,49.903,0,43.447c0-6.455,5.254-11.688,11.734-11.688c5.572,0,10.226,3.87,11.427,9.055l24.083,8.141
+									c2.346-2.369,5.581-3.854,9.166-3.934l3.607-10.924c-0.011-0.217-0.033-0.431-0.033-0.65c0-8.255,6.72-14.947,15.008-14.947
+									C83.279,18.5,90,25.192,90,33.447C90,39.987,85.779,45.531,79.91,47.561z M19.112,39.446c-1.402-2.514-4.093-4.217-7.184-4.217
+									c-4.538,0-8.217,3.665-8.217,8.185c0,4.52,3.679,8.184,8.217,8.184c0.839,0,1.647-0.125,2.409-0.358l-3.904-1.319
+									c-3.146-1.678-4.33-5.579-2.645-8.713c1.686-3.132,5.602-4.31,8.745-2.632L19.112,39.446z M63.288,33.483
+									c0,6.412,5.218,11.61,11.655,11.61c6.437,0,11.658-5.198,11.658-11.61c0-6.415-5.222-11.613-11.658-11.613
+									C68.506,21.87,63.288,27.068,63.288,33.483z M63.518,59.389c0-4.881-3.973-8.84-8.873-8.84c-0.688,0-1.352,0.086-1.994,0.232
+									l4.959,1.676c3.145,1.68,4.326,5.58,2.642,8.711c-1.685,3.137-5.601,4.312-8.744,2.635l-5.344-1.807
+									c1.116,3.609,4.491,6.232,8.481,6.232C59.545,68.229,63.518,64.27,63.518,59.389z"/>
+							</g>
+							</svg>
+						</a>
+						
+					</section>
+					<form action="//formspree.io/jimmy.j.jia@gmail.com" method="POST" id="form">
+						<input type="text" name="name" placeholder="Name">
+						<input type="email" name="_replyto" placeholder="Email">
+						<textarea name="message" rows="4" placeholder="Your Message"></textarea>
+						<input type="submit" value="Send">
+						<input type="hidden" name="_subject" value="Personal Website!" />
+						<input type="text" name="_gotcha" style="display:none" />
+						<input type="hidden" name="_next" value="#" />
+					</form>
+				</div>
 			</div>
-			<div class="push"></div>
+			<footer>
+				© Jimmy Jia 2015. Design by <a href="index.html">Me</a>. Email me at <a href="mailto:jiejia2@illinois.edu">jiejia2@illinois.edu</a></footer>
+			<script>
+				$(document).ready(function() {
+					var children = $('#introanim').children();
+					$(children[0]).stop(true,true).animate({left:'+=600',opacity:'1'},500, function(){
+						setTimeout(function(){$(children[1]).stop(true,true).animate({left:'+=600',opacity:'1'}, 650, function(){
+							setTimeout(function(){$(children[3]).stop(true,true).animate({left:'+=600',opacity:'1'}, 800, function(){
+								setTimeout(function(){$(children[5]).stop(true,true).animate({left:'+=600',opacity:'1'}, 600, function(){
+									setTimeout(function(){$(children[7]).stop(true,true).animate({left:'+=600',opacity:'1'}, 800, function(){
+										setTimeout(function(){$(children[9]).stop(true,true).animate({left:'+=600',opacity:'1'}, 800)
+											//wow such nesting
+											setTimeout(function(){$('#down').fadeIn(500)}, 800)
+										}, 2100)
+									})}, 1600)
+								})}, 1500)
+							})}, 1100)
+						})}, 800)
+					});
+				});
+				function mobnav(aclick){
+					if($(window).width() < 700)
+						$('#navigation').delay(aclick).fadeToggle();
+				}
+				$("#down").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#info").offset().top
+					}, 1000);
+				});
+				$(".contactbutton").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#contact").offset().top
+					}, 1000);
+				});
+				$("#whatidobutton").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#whatido").offset().top
+					}, 1000);
+				});
+				$("#skillsbutton").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#skills").offset().top
+					}, 1000);
+				});
+				$("#homebutton").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#top").offset().top
+					}, 1000);
+				});
+				$("#examplesbutton").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#examples").offset().top
+					}, 1000);
+				});
+				$(document).ready(function(){
+					$(".right").click(function(){
+						$("#cep1").animate({
+							left: "-100vw",
+						});
+						$('#cep2').animate({
+							left: "0"
+						})
+					});
+					$(".left").click(function(){
+						$('#cep2').animate({
+							left: '100vw'
+						});
+						$('#cep1').animate({
+							left: '0'
+						})
+					});
+				});
+			</script>
 		</div>
-		<div class="footer">
-			<p>Jimmy Jia - 2014-2015</p>
-		</div>
-		<script src='resources/js/jquery.min.js'></script>
-		<script>
-			$(document).ready(function() {
-    	    	$('.scrollup').click(function () {
-			        $("html, body").animate({
-			            scrollTop: 0
-			        }, 600);
-			        return false;
-	    		});
-    		});
-			$(".workimg").hover(function(){
-				$(".1").fadeTo(400, 1);
-			}, function(){
-				if($(document).width()>720)
-				$(".1").fadeTo(400, 0);
-			})			
-			$(".workimg2").hover(function(){
-				$(".2").fadeTo(400, 1);
-			}, function(){
-				if($(document).width()>720)
-				$(".2").fadeTo(400, 0);
-			})
-			var count=0;
-			function displaynav(){
-				var menu=document.getElementById("slider");
-				if (count==0){
-					$(menu).slideDown(400);
-					$(".header").css("background-color", "#43abc9");
-					count=1;
-				}
-				else{
-					$(menu).slideUp(400);
-					count=0;
-					$(".header").css("background-color", "#107896");
-				}
-			}
-			function nav(display){
-				switch(display){
-					case 1:
-						$("#slide2").fadeOut(0);
-						$("#slide3").fadeOut(0);
-						$("#slide4").fadeOut(0);
-						$("#slide1").fadeIn(400);
-						break;
-					case 2:
-						$("#slide3").fadeOut(0);
-						$("#slide1").fadeOut(0);
-						$("#slide4").fadeOut(0);
-						$("#slide2").fadeIn(400);
-						break;
-					case 3:
-						$("#slide1").fadeOut(0);
-						$("#slide2").fadeOut(0);
-						$("#slide4").fadeOut(0);
-						$("#slide3").fadeIn(400);
-						break;
-					case 4:
-						$("#slide1").fadeOut(0);
-						$("#slide2").fadeOut(0);
-						$("#slide3").fadeOut(0);
-						$("#slide4").fadeIn(400);
-						break;
-				}
-			}
-		</script>
+
 	</body>
+
 </html>
