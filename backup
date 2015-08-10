@@ -26,8 +26,7 @@ p, a {
 
 a {
   color: #E91E63;
-  -webkit-transition: color 0.4s;
-          transition: color 0.4s;
+  transition: color 0.4s;
   text-decoration: none; }
   a:hover {
     color: #2A324B; }
@@ -87,8 +86,7 @@ header {
     text-decoration: none;
     font-size: 200%;
     margin-right: 10px;
-    -webkit-transition: color 0.4s;
-            transition: color 0.4s; }
+    transition: color 0.4s; }
     header a:hover {
       color: #F1F1F1; }
   header #mobnav {
@@ -98,14 +96,18 @@ header {
   padding-top: 150px;
   background-color: #E91E63;
   background: #e91e63;
+  background: -moz-linear-gradient(45deg, #e91e63 0%, #066dab 100%);
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #e91e63), color-stop(100%, #066dab));
   background: -webkit-linear-gradient(45deg, #e91e63 0%, #066dab 100%);
+  background: -o-linear-gradient(45deg, #e91e63 0%, #066dab 100%);
+  background: -ms-linear-gradient(45deg, #e91e63 0%, #066dab 100%);
   background: linear-gradient(45deg, #e91e63 0%, #066dab 100%);
-  background: -webkit-linear-gradient(220deg, #E91E63, #066DAB);
   background: linear-gradient(230deg, #E91E63, #066DAB);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e91e63', endColorstr='#066dab',GradientType=1 );
   background-size: 200% 200%;
   -webkit-animation: BackgroundWave 11s ease infinite;
+  -moz-animation: BackgroundWave 11s ease infinite;
+  -o-animation: BackgroundWave 11s ease infinite;
   animation: BackgroundWave 11s ease infinite;
   height: 100vh;
   width: 100%; }
@@ -118,7 +120,6 @@ header {
       display: inline-block; }
     .intro div h1, .intro div h2 {
       opacity: 0;
-      filter: alpha(opacity=0);
       position: relative;
       left: -600px; }
     .intro div h1:last-child {
@@ -137,8 +138,7 @@ header {
     text-overflow: none;
     text-align: center;
     text-decoration: none;
-    -webkit-transition: all 0.4s;
-            transition: all 0.4s; }
+    transition: all 0.4s; }
     .intro #down:hover {
       color: white;
       border: 1px solid white;
@@ -156,12 +156,10 @@ header {
     display: block;
     text-shadow: 3px 3px 5px rgba(42, 50, 75, 0.5); }
   .subintro #whatido {
-    padding: 100px 0;
+    padding: 80px 0;
     max-width: 100%;
     width: 800px;
     margin: 0 auto; }
-    .subintro #whatido h3 {
-      padding-bottom: 15px; }
     .subintro #whatido h3, .subintro #whatido p {
       text-align: center; }
     .subintro #whatido p {
@@ -170,11 +168,14 @@ header {
     .subintro #whatido p:nth-child(2) {
       font-size: 125%;
       color: #777; }
-    .subintro #whatido p:nth-child(3), .subintro #whatido p:nth-child(4) {
+    .subintro #whatido p:nth-child(3) {
       font-size: 110%;
       color: #999; }
+    .subintro #whatido p:nth-child(4) {
+      font-size: 100%;
+      color: #aaa; }
     .subintro #whatido a {
-      padding-top: 20px;
+      padding-top: 10px;
       font-size: 130%;
       display: block;
       width: 130px;
@@ -209,13 +210,8 @@ header {
 
 .skillbox {
   background-color: rgba(241, 241, 241, 0.3);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 700px;
   max-width: 100%;
   padding-top: 20px;
@@ -225,13 +221,11 @@ header {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: background-color 0.4s;
-          transition: background-color 0.4s; }
+  transition: background-color 0.4s; }
   .skillbox img {
     height: 80px;
     padding: 10px;
-    -webkit-transition: all 0.4s;
-            transition: all 0.4s; }
+    transition: all 0.4s; }
     .skillbox img:hover {
       -webkit-transform: scale(1.6);
       -ms-transform: scale(1.6);
@@ -240,7 +234,7 @@ header {
     background-color: #F1F1F1; }
 
 #examples {
-  margin-top: 100px; }
+  margin-top: 50px; }
   #examples h3, #examples p:nth-child(2) {
     text-align: center; }
   #examples p:nth-child(2) {
@@ -248,7 +242,7 @@ header {
     font-size: 120%; }
 
 #gallery {
-  margin-top: 100px;
+  margin-top: 50px;
   background-color: #066DAB; }
   #gallery div div {
     height: 600px;
@@ -257,7 +251,7 @@ header {
     background-repeat: no-repeat; }
 
 .right, .left {
-  top: 47%;
+  top: 50%;
   position: absolute;
   right: 0;
   background-image: url(resources/icons/right.svg);
@@ -267,8 +261,7 @@ header {
   background-color: rgba(233, 30, 99, 0.3);
   border: 0;
   background-size: cover;
-  -webkit-transition: background-color 0.4s;
-          transition: background-color 0.4s;
+  transition: background-color 0.4s;
   z-index: 20; }
   .right:hover, .left:hover {
     background-color: rgba(233, 30, 99, 0.9);
@@ -289,19 +282,9 @@ header {
     background-image: url(resources/pics/cepheilaptop.jpg);
     background-position: right;
     background-color: #E91E63;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     position: relative; }
     #cephei > div:first-child div:first-child {
       background-color: rgba(233, 30, 99, 0.2);
@@ -349,19 +332,9 @@ header {
     background-color: #066DAB;
     background-image: url(resources/pics/cep.jpg);
     background-position: left;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
     top: 0;
     left: 100vw; }
@@ -370,8 +343,7 @@ header {
       width: 100%;
       position: absolute;
       top: 0;
-      -webkit-transition: background-color 1s;
-              transition: background-color 1s; }
+      transition: background-color 1s; }
     #cephei > div:nth-child(2) div:nth-child(2) {
       height: auto;
       padding-right: 40px;
@@ -411,20 +383,12 @@ header {
         line-height: 1.9; }
 
 .getintouch {
-  padding-top: 100px; }
+  padding-top: 50px; }
   .getintouch > div {
     margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 300px;
     max-width: 100%; }
     .getintouch > div div {
@@ -449,16 +413,10 @@ header {
     text-align: center; }
 
 .contactme {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 30px; }
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 15px; }
   .contactme a {
     margin-right: 10px;
     margin-left: 10px; }
@@ -466,8 +424,7 @@ header {
       background-color: #474F61;
       padding: 10px;
       fill: #F1F1F1;
-      -webkit-transition: fill 0.4s, background-color 0.4s, border 0.4s, padding 0.4s;
-              transition: fill 0.4s, background-color 0.4s, border 0.4s, padding 0.4s;
+      transition: fill 0.4s, background-color 0.4s, border 0.4s, padding 0.4s;
       border-radius: 50%;
       border: 1px solid transparent; }
       .contactme a svg:hover {
@@ -489,8 +446,8 @@ header {
 #form {
   max-width: 100%;
   margin: 0 auto;
-  padding: 40px 0;
-  background-color: #d0d0df;
+  padding: 20px 0;
+  background-color: #c4c4c4;
   display: block; }
   #form input, #form textarea {
     padding: 20px;
@@ -502,8 +459,7 @@ header {
     color: #202020;
     border: 0;
     border-bottom: 2px solid #066DAB;
-    -webkit-transition: background-color 0.4s;
-            transition: background-color 0.4s;
+    transition: background-color 0.4s;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif; }
     #form input::-webkit-input-placeholder, #form textarea::-webkit-input-placeholder {
@@ -535,15 +491,20 @@ header {
     background-color: #066DAB;
     background: #066DAB;
     background-image: -webkit-linear-gradient(top, #066DAB, #2980b9);
+    background-image: -moz-linear-gradient(top, #066DAB, #2980b9);
+    background-image: -ms-linear-gradient(top, #066DAB, #2980b9);
+    background-image: -o-linear-gradient(top, #066DAB, #2980b9);
     background-image: linear-gradient(to bottom, #066DAB, #2980b9);
     font-family: "Montserrat", sans-serif;
     font-size: 120%;
-    -webkit-transition: all 0.4s;
-            transition: all 0.4s;
+    transition: all 0.4s;
     color: white; }
     #form input[type=submit]:hover {
       background: #3cb0fd;
       background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
       background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
       text-decoration: none;
       border-bottom: 2px solid #474F61;
@@ -576,7 +537,7 @@ footer {
     line-height: 1.4; }
   #aboutme h3 {
     text-align: center;
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
   #aboutme img {
     margin: 0 auto;
     display: block;
@@ -584,13 +545,11 @@ footer {
     padding: 0; }
   #aboutme div {
     width: 100%;
-    margin-bottom: 80px; }
+    margin-bottom: 30px; }
   #aboutme div:nth-child(3) {
     background-color: #474F61; }
   #aboutme div:nth-child(5) {
     background-color: #E91E63; }
-  #aboutme div:last-of-type {
-    margin-bottom: 20px; }
 
 .illini {
   color: #ff8800; }
@@ -602,6 +561,20 @@ footer {
   font-family: "Montserrat Ultralight";
   src: url(resources/fonts/Montserrat-UltraLight.otf); }
 @-webkit-keyframes BackgroundWave {
+  0% {
+    background-position: 97% 0%; }
+  50% {
+    background-position: 4% 100%; }
+  100% {
+    background-position: 97% 0%; } }
+@-moz-keyframes BackgroundWave {
+  0% {
+    background-position: 97% 0%; }
+  50% {
+    background-position: 4% 100%; }
+  100% {
+    background-position: 97% 0%; } }
+@-o-keyframes BackgroundWave {
   0% {
     background-position: 97% 0%; }
   50% {
@@ -622,6 +595,20 @@ footer {
     color: #066DAB; }
   100% {
     color: #E91E63; } }
+@-moz-keyframes TextAnim {
+  0% {
+    color: #E91E63; }
+  50% {
+    color: #066DAB; }
+  100% {
+    color: #E91E63; } }
+@-o-keyframes TextAnim {
+  0% {
+    color: #E91E63; }
+  50% {
+    color: #066DAB; }
+  100% {
+    color: #E91E63; } }
 @keyframes TextAnim {
   0% {
     color: #E91E63; }
@@ -629,6 +616,9 @@ footer {
     color: #066DAB; }
   100% {
     color: #E91E63; } }
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg); } }
@@ -636,17 +626,6 @@ footer {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
-@media (max-width: 1800px) {
-  #cephei > div:first-child {
-    background-position: center;
-    background-size: cover; }
-    #cephei > div:first-child div:nth-child(2) h3, #cephei > div:first-child div:nth-child(2) a, #cephei > div:first-child div:nth-child(2) p, #cephei > div:first-child div:nth-child(2) a {
-      text-shadow: 1px 2px 3px rgba(0, 34, 51, 0.7); }
-  #cephei > div:nth-child(2) {
-    background-position: center;
-    background-size: cover; }
-    #cephei > div:nth-child(2) div:nth-child(2) h3, #cephei > div:nth-child(2) div:nth-child(2) a, #cephei > div:nth-child(2) div:nth-child(2) p, #cephei > div:nth-child(2) div:nth-child(2) a {
-      text-shadow: 1px 2px 6px #553222; } }
 @media (max-width: 1000px) {
   h1 {
     font-size: 6.2vw; }
@@ -659,7 +638,7 @@ footer {
 
   #examples #gallery #cephei #cep1, #examples #gallery #cephei #cep2 {
     background-position: center;
-    height: 400px; }
+    height: auto; }
     #examples #gallery #cephei #cep1 div:first-child, #examples #gallery #cephei #cep2 div:first-child {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.3); }
@@ -686,8 +665,7 @@ footer {
       color: #066DAB;
       color: white;
       display: block;
-      -webkit-transition: background-color 0.4s;
-              transition: background-color 0.4s;
+      transition: background-color 0.4s;
       margin: 0; }
       header nav a:hover {
         background-color: #474F61; }
@@ -713,17 +691,13 @@ footer {
     text-align: center; }
 
   #examples #gallery #cephei #cep1 div:nth-child(2) h3, #examples #gallery #cephei #cep2 div:nth-child(2) h3 {
-    font-size: 5.5vw; }
-    #examples #gallery #cephei #cep1 div:nth-child(2) h3 span, #examples #gallery #cephei #cep2 div:nth-child(2) h3 span {
-      display: block;
-      font-size: 13vw; }
+    font-size: 4vw; }
   #examples #gallery #cephei #cep1 div:nth-child(2) a:nth-child(2), #examples #gallery #cephei #cep2 div:nth-child(2) a:nth-child(2) {
-    font-size: 5vw;
-    padding: 0; }
-  #examples #gallery #cephei #cep1 div:nth-child(2) p:nth-child(3), #examples #gallery #cephei #cep2 div:nth-child(2) p:nth-child(3) {
     font-size: 3.5vw; }
+  #examples #gallery #cephei #cep1 div:nth-child(2) p:nth-child(3), #examples #gallery #cephei #cep2 div:nth-child(2) p:nth-child(3) {
+    font-size: 2.8vw; }
   #examples #gallery #cephei #cep1 div:nth-child(2) p:nth-child(4), #examples #gallery #cephei #cep2 div:nth-child(2) p:nth-child(4) {
-    font-size: 3.8vw;
+    font-size: 3vw;
     line-height: 1.3; }
     #examples #gallery #cephei #cep1 div:nth-child(2) p:nth-child(4) br, #examples #gallery #cephei #cep2 div:nth-child(2) p:nth-child(4) br {
       display: none; }
@@ -747,3 +721,5 @@ footer {
   #form {
     padding: 0;
     box-shadow: 0 0 3px 3px rgba(204, 204, 204, 0.5); } }
+
+/*# sourceMappingURL=stylesheet.css.map */
