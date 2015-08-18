@@ -17,7 +17,23 @@
 		<div class="wrapper aboutpad">
 			<header>
 				<a href="#" id="me">Jimmy Jia</a>
-				<a href="index.html" id="homebutton" class="aboutbutton" style="float: right">Home</a>
+				<a id="mobnav" onclick="mobnav(0)">
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+						<g>
+							<path id="svg_3" fill="white" d="m4.04949,8.47441l8,0c0.275,0 0.5,-0.225 0.5,-0.5c0,-0.276 -0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.224 -0.5,0.5c0,0.275 0.224,0.5 0.5,0.5z"/>
+							<path id="svg_4" fill="white" d="m4.04949,5.47441l8,0c0.275,0 0.5,-0.224 0.5,-0.5s-0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.224 -0.5,0.5s0.224,0.5 0.5,0.5z"/>
+							<path id="svg_5" fill="white" d="m4.04949,11.47441l8,0c0.275,0 0.5,-0.225 0.5,-0.5s-0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.225 -0.5,0.5s0.224,0.5 0.5,0.5z"/>
+						</g>
+					</svg>
+				</a>
+				<nav id="navigation">
+					<a href="http://jimmyjia.me" id="homebutton">Home</a>
+					<a href="about.html" id="aboutbutton">About Me</a>
+					<a href="index.html#skills" id="skillsbutton">Skills</a>
+					<a onclick="mobnav(800)" id="examplesbutton">Examples</a>
+					<a href="index.html#contact" class="contactbutton">Contact</a>
+					
+				</nav>
 			</header>
 			<div class="content" id="top">
 				<h3 class="examplehead"><span class="hl">Exam</span>ples</h3>
@@ -68,5 +84,23 @@
 			</div>
 		</div>
 		<footer>© Jimmy Jia 2015. Design by <a href="index.html">Me</a>. Email me at <a href="mailto:jiejia2@illinois.edu">jiejia2@illinois.edu</a></footer>
+		<script>
+			function mobnav(aclick){
+				if($(window).width() < 700){
+					for(var i=3; i<6; i++){
+						if(!$('#svg_'+i).attr('class'))
+							$('#svg_'+i).attr('class', 'svg_'+i);
+						else
+							$('#svg_'+i).removeAttr('class');
+					}
+					$('#navigation').delay(aclick).fadeToggle();
+				}
+			}
+			$("#examplesbutton").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#top").offset().top
+				}, 1000);
+			});
+		</script>
 	</body>
 </html>

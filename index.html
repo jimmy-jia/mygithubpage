@@ -45,14 +45,6 @@
 						<p><span>I want to work on that project you've been thinking about</span></p>
 						<p><span>Lets Build Something Cool</span></p>
 					</div>
-					<!--<div id="introanim">
-						<h1>Hi,</h1>
-						<h2>I'm Jimmy.</h2><br>
-						<h2>And boy am I glad to see you.</h2><br>
-						<h1>I'm bored.</h1><br>
-						<h2>And I want to work with you on that<br> project you've been thinking about.</h2><br>
-						<h1>Lets Build Something Cool.</h1>
-					</div>-->
 					<a id="down">Learn More</a>
 				</div>
 				<div class="subintro" id="info">
@@ -263,18 +255,19 @@
 					}, 1000);
 				});*/
 				$(document).ready(function(){
+					$("#cep2").hide();
 					$(".right").click(function(){
 						$("#cep1").animate({
-							left: "-100vw",
-						});
+							left: "-100vw"
+						})
 						$('#cep2').animate({
 							left: "0"
-						})
+						}).show()
 					});
 					$(".left").click(function(){
 						$('#cep2').animate({
 							left: '100vw'
-						});
+						}).fadeOut(400);
 						$('#cep1').animate({
 							left: '0'
 						})
