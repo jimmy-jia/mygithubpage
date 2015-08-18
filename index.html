@@ -20,32 +20,40 @@
 				<a id="mobnav" onclick="mobnav(0)">
 					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 						<g>
-							<path class="svgw" d="M4.5,9h8C12.775,9,13,8.775,13,8.5C13,8.224,12.775,8,12.5,8h-8C4.224,8,4,8.224,4,8.5C4,8.775,4.224,9,4.5,9z" fill="white"/>
-							<path class="svgw" d="M4.5,6h8C12.775,6,13,5.776,13,5.5S12.775,5,12.5,5h-8C4.224,5,4,5.224,4,5.5S4.224,6,4.5,6z" fill="white"/>
-							<path class="svgw" d="M4.5,12h8c0.275,0,0.5-0.225,0.5-0.5S12.775,11,12.5,11h-8C4.224,11,4,11.225,4,11.5S4.224,12,4.5,12z" fill="white"/>
+							<path id="svg_3" fill="white" d="m4.04949,8.47441l8,0c0.275,0 0.5,-0.225 0.5,-0.5c0,-0.276 -0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.224 -0.5,0.5c0,0.275 0.224,0.5 0.5,0.5z"/>
+							<path id="svg_4" fill="white" d="m4.04949,5.47441l8,0c0.275,0 0.5,-0.224 0.5,-0.5s-0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.224 -0.5,0.5s0.224,0.5 0.5,0.5z"/>
+							<path id="svg_5" fill="white" d="m4.04949,11.47441l8,0c0.275,0 0.5,-0.225 0.5,-0.5s-0.225,-0.5 -0.5,-0.5l-8,0c-0.276,0 -0.5,0.225 -0.5,0.5s0.224,0.5 0.5,0.5z"/>
 						</g>
 					</svg>
 				</a>
 				<nav id="navigation">
-					<a href="#" onclick="mobnav(800)" id="homebutton">Home</a>
+					<a onclick="mobnav(800)" id="homebutton">Home</a>
 					<a href="about.html">About Me</a>
-					<a href="#" onclick="mobnav(800)" id="skillsbutton">Skills</a>
-					<a href="#" onclick="mobnav(800)" id="examplesbutton">Examples</a>
-					<a href="#" onclick="mobnav(800)" class="contactbutton">Contact</a>
+					<a onclick="mobnav(800)" id="skillsbutton">Skills</a>
+					<a href="examples.html" id="examplesbutton">Examples</a>
+					<a onclick="mobnav(800)" class="contactbutton">Contact</a>
 					
 				</nav>
 			</header>
 			<div class="content" id="top">
 				<div class="intro">
-					<div id="introanim">
+					<img class="desktopimg" src="resources/pics/mbp.svg"/>
+					<div class="textbox" id="texting">
+						<p><span>Hi, I'm Jimmy</span></p>
+						<p><span>And boy am I glad to see you.</span></p>
+						<p><span>I need something to do...</span></p>
+						<p><span>I want to work on that project you've been thinking about</span></p>
+						<p><span>Lets Build Something Cool</span></p>
+					</div>
+					<!--<div id="introanim">
 						<h1>Hi,</h1>
 						<h2>I'm Jimmy.</h2><br>
 						<h2>And boy am I glad to see you.</h2><br>
 						<h1>I'm bored.</h1><br>
 						<h2>And I want to work with you on that<br> project you've been thinking about.</h2><br>
 						<h1>Lets Build Something Cool.</h1>
-					</div>
-					<a href="#info" id="down">Learn More</a>
+					</div>-->
+					<a id="down">Learn More</a>
 				</div>
 				<div class="subintro" id="info">
 					<section id="whatido">
@@ -53,8 +61,7 @@
 						<p>I'm Jimmy Jia, and I'm a web developer.</p>
 						<p>I'm a creator, a problem solver, and an artist, all in one.</p>
 						<p>Lets work together and make something awesome.</p>
-						<a href="#" class="contactbutton">Contact Me</a>
-
+						<a class="contactbutton">Contact Me</a>
 					</section>
 					<section id="skills">
 						<div></div>
@@ -75,7 +82,7 @@
 					</section>
 					<section id="examples">
 						<h3>My <span class="hl">work</span></h3>
-						<p>Examples of whats in store for you.</p>
+						<p><a href="examples.html">Examples of whats in store for you.</a></p>
 						<div id="gallery">
 							<div id="cephei">
 								<div id="cep1">
@@ -194,26 +201,36 @@
 			<footer>
 				© Jimmy Jia 2015. Design by <a href="index.html">Me</a>. Email me at <a href="mailto:jiejia2@illinois.edu">jiejia2@illinois.edu</a></footer>
 			<script>
-				$(document).ready(function() {
-					var children = $('#introanim').children();
-					$(children[0]).stop(true,true).animate({left:'+=600',opacity:'1'},500, function(){
-						setTimeout(function(){$(children[1]).stop(true,true).animate({left:'+=600',opacity:'1'}, 650, function(){
-							setTimeout(function(){$(children[3]).stop(true,true).animate({left:'+=600',opacity:'1'}, 800, function(){
-								setTimeout(function(){$(children[5]).stop(true,true).animate({left:'+=600',opacity:'1'}, 600, function(){
-									setTimeout(function(){$(children[7]).stop(true,true).animate({left:'+=600',opacity:'1'}, 800, function(){
-										setTimeout(function(){$(children[9]).stop(true,true).animate({left:'+=600',opacity:'1'}, 800)
-											//wow such nesting
-											setTimeout(function(){$('#down').fadeIn(500)}, 800)
-										}, 2100)
-									})}, 1600)
-								})}, 1500)
-							})}, 1100)
-						})}, 800)
-					});
-				});
+				$(document).ready(function(){
+					var children=$('#texting').children();
+					$(children[0]).addClass("animated bounceIn");
+					setTimeout(function(){
+						$(children[1]).addClass("animated bounceIn");
+						setTimeout(function(){
+							$(children[2]).addClass("animated bounceIn");
+								setTimeout(function(){
+									$(children[3]).addClass("animated bounceIn");
+									setTimeout(function(){
+										$(children[4]).addClass('animated bounceIn');
+										setTimeout(function(){
+											$(children[5]).addClass('animated bounceIn');
+											return;
+										}, 2000)
+									}, 1600)
+							}, 1600)
+						}, 1600)
+					}, 1450)
+				}, 1300)
 				function mobnav(aclick){
-					if($(window).width() < 700)
+					if($(window).width() < 700){
+						for(var i=3; i<6; i++){
+							if(!$('#svg_'+i).attr('class'))
+								$('#svg_'+i).attr('class', 'svg_'+i);
+							else
+								$('#svg_'+i).removeAttr('class');
+						}
 						$('#navigation').delay(aclick).fadeToggle();
+					}
 				}
 				$("#down").click(function() {
 					$('html, body').animate({
@@ -232,7 +249,7 @@
 				});
 				$("#skillsbutton").click(function() {
 					$('html, body').animate({
-						scrollTop: $("#skills").offset().top
+						scrollTop: $("#skills").offset().top - 50
 					}, 1000);
 				});
 				$("#homebutton").click(function() {
@@ -240,11 +257,11 @@
 						scrollTop: $("#top").offset().top
 					}, 1000);
 				});
-				$("#examplesbutton").click(function() {
+				/*$("#examplesbutton").click(function() {
 					$('html, body').animate({
-						scrollTop: $("#examples").offset().top
+						scrollTop: $("#examples").offset().top - 100
 					}, 1000);
-				});
+				});*/
 				$(document).ready(function(){
 					$(".right").click(function(){
 						$("#cep1").animate({
